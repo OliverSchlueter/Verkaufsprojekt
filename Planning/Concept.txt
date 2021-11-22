@@ -1,0 +1,20 @@
+Verkaufsprojekt
+
+Verschiedene Autoren können ihre Software für einen Preis anbieten. Kunden können diese Software erwerben. Mitarbeiter prüfen und kontrollieren diese Software.
+
+Ein Produkt hat die folgenden Eigenschaften:
+- Autoren mit Rolle (von denen die Software erstellt wurde)
+- Preis (0€ ist erlaubt)
+- Beschreibung (ggf. mit Dokumentation)
+- Bewertungen (inkl. Kommentare von Kunden)
+- Veröffentlichungsdatum
+
+Autoren, Kunden und Mitarbeiter sind alle Benutzer mit folgenden Eigenschaften:
+- Benutzer ID
+- Vorname
+- Nachname
+- Nickname
+- Email Adresse
+- Geburtsdatum
+- Erstelldatum (des Kontos)
+- Passwort

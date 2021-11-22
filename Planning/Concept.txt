@@ -3,6 +3,8 @@ Verkaufsprojekt
 Verschiedene Autoren können ihre Software für einen Preis anbieten. Kunden können diese Software erwerben. Mitarbeiter prüfen und kontrollieren diese Software.
 
 Ein Produkt hat die folgenden Eigenschaften:
+- Produkt ID
+- Produktname
 - Autoren mit Rolle (von denen die Software erstellt wurde)
 - Preis (0€ ist erlaubt)
 - Beschreibung (ggf. mit Dokumentation)
@@ -18,3 +20,49 @@ Autoren, Kunden und Mitarbeiter sind alle Benutzer mit folgenden Eigenschaften:
 - Geburtsdatum
 - Erstelldatum (des Kontos)
 - Passwort
+
+Autoren haben zusätzlich noch folgenden Eigenschaften:
+- Entwicklerstatus (Neulig, Fortgeschrittener, Erfahrener, Profi... )
+- Bevorzugte Programmier/Skript-Sprachen
+
+Kunden haben zusätzlich noch folgenden Eigenschaften:
+- Gekaufte Produkte
+- Guthaben
+- Beobachtungsliste
+- Wunschliste
+
+Mitarbeiter haben zusätzlich noch folgenden Eigenschaften:
+- Aufgabenbereich (Kontrolle von Produkte, Support... )
+- Aktuell zu prüfende Produkte
+
+Die Umsetzung erfolgt hauptsächlich in C# mit Windows-Forms. Dafür sind folgende Formulare vorgesehen:
+- Startseite
+    - Überblick über Neuigkeiten
+    - Möglichkeit zu weiteren Formularen
+    - Top 5 der beliebtesten Produkte
+    - Top 5 der meist gekaufen Produkte
+    - Die 5 neusten Produkte
+- Login
+    - Einloggen mit Nickname/Email und Passwort
+    - Passwort zurücksetzen
+    - Eingeloggt bleiben
+- Registierung
+    - Registierung mit erforderliche Eingaben
+    - Prüfen auf Menschheit
+- Benutzereinstellungen
+    - Ändern er persönlichen Daten
+    - Erhalt von Emails?
+- Kunden-Profil
+    - Gekaufte Produkte Übersicht
+    - Gutenhabenverwaltung
+- Autoren-Profil
+    - Erstellte/mitwirkende Produkte Übersicht
+    - Neue Produkte hinzufügen
+- Produkte
+    - Suchen eines Produktes
+    - Suchen eines Autoren
+    - Verweis auf ein zur Laufzeit erstelltes Formular eines bestimmten Produktes
+        - Name des Produktes
+        - Beschreibung
+        - Preis
+        - ...

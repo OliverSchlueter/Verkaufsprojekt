@@ -1,8 +1,8 @@
 ## Verkaufsprojekt
 
 Todos:
-[ ] Planung
-[ ] Programmierung
-[ ] Testen
-[ ] Verbessern
-[ ] Dokumentieren
+- [ ] Planung
+- [ ] Programmierung
+- [ ] Testen
+- [ ] Verbessern
+- [ ] Dokumentieren

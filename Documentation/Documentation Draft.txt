@@ -1,0 +1,7 @@
+Verkaufsprojekt
+
+Inhalt
+- Einleitung
+- Projektbeschreibung
+- Diagramme
+- Codedokumentation

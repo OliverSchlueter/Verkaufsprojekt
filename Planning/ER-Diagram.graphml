@@ -137,7 +137,7 @@
           <y:Geometry height="56.0" width="90.0" x="-36.2182098765432" y="487.49499999999995"/>
           <y:Fill color="#E8EEF7" color2="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.015625" x="29.9921875" xml:space="preserve" y="18.6494140625">kauft<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.015625" x="29.9921875" xml:space="preserve" y="18.649414062499943">kauft<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -477,7 +477,7 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
           <y:Geometry height="56.0" width="161.664609053498" x="-213.7574074074074" y="487.4949999999999"/>
           <y:Fill color="#E8EEF7" color2="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.060546875" x="25.802031089249" xml:space="preserve" y="11.298828124999943">beobachtet
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.060546875" x="25.802031089249" xml:space="preserve" y="11.298828125">beobachtet
 (Beobachtungsliste)<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
@@ -491,7 +491,7 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
           <y:Geometry height="56.0" width="124.59670781892999" x="-346.49794238683126" y="487.49499999999983"/>
           <y:Fill color="#E8EEF7" color2="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.6796875" x="23.958510159464993" xml:space="preserve" y="11.298828124999943">wünscht
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.6796875" x="23.958510159464993" xml:space="preserve" y="11.298828125000057">wünscht
 (Wunschliste)<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
@@ -545,6 +545,20 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
           <y:Fill color="#E8EEF7" color2="#00FF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.3828125" x="1.30859375" xml:space="preserve" y="10.6494140625">Beschreibung<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n41">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.entityRelationship.attribute">
+          <y:Geometry height="40.0" width="99.15832411642691" x="422.96604938271605" y="172.74333333333334"/>
+          <y:Fill color="#E8EEF7" color2="#00FF00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.025390625" x="3.5664667457134556" xml:space="preserve" y="3.298828125">Entwickerstatus-
+ID<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -672,7 +686,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e12" source="n11" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -683,7 +696,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e13" source="n12" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -694,7 +706,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e14" source="n13" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -705,7 +716,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e15" source="n14" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -716,7 +726,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e16" source="n15" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -727,7 +736,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e17" source="n16" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -738,7 +746,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e18" source="n18" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -749,7 +756,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e19" source="n17" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -760,7 +766,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e20" source="n19" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -771,7 +776,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e21" source="n20" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -782,7 +786,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e22" source="n21" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -793,7 +796,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e23" source="n22" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -804,7 +806,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e24" source="n23" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -815,7 +816,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e25" source="n1" target="n24">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -826,7 +826,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e26" source="n24" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -837,7 +836,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e27" source="n25" target="n24">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -848,7 +846,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e28" source="n26" target="n24">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -859,7 +856,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e29" source="n28" target="n24">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -870,7 +866,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e30" source="n27" target="n24">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -881,7 +876,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e31" source="n29" target="n9">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -892,7 +886,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e32" source="n30" target="n9">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -903,7 +896,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e33" source="n31" target="n32">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -914,7 +906,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e34" source="n32" target="n3">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -925,7 +916,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e35" source="n33" target="n3">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -936,7 +926,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e36" source="n34" target="n1">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -947,7 +936,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e37" source="n1" target="n35">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -958,7 +946,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e38" source="n35" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -969,7 +956,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e39" source="n36" target="n1">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -980,7 +966,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e40" source="n36" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -991,7 +976,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e41" source="n38" target="n37">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1002,7 +986,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e42" source="n38" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1013,7 +996,6 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e43" source="n39" target="n31">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1024,6 +1006,16 @@ Programmiersprachen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       </data>
     </edge>
     <edge id="e44" source="n40" target="n37">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e45" source="n41" target="n31">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>

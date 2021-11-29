@@ -109,6 +109,25 @@ CREATE TABLE IF NOT EXISTS Mitarbeiter_arbeitet_Aufgabenbereich(
     ON UPDATE CASCADE
 );
 
+# Mitarbeiter_prueft_Produkt
+CREATE TABLE IF NOT EXISTS Mitarbeiter_prueft_Produkt(
+  `benutzerID` VARCHAR(5) NOT NULL,
+  `produktID` VARCHAR(5) NOT NULL,
+  `datum` DATE NOT NULL,
+
+  PRIMARY KEY (`benutzerID`, `produktID`),
+
+  FOREIGN KEY (`benutzerID`)
+      REFERENCES `Mitarbeiter` (`benutzerID`)
+      ON DELETE RESTRICT
+      ON UPDATE CASCADE,
+
+  FOREIGN KEY (`produktID`)
+    REFERENCES `Produkt` (`produktID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
+);
+
 # Kunde_kauft_Produkt
 CREATE TABLE IF NOT EXISTS Kunde_kauft_Produkt(
     `kaufID` INTEGER AUTO_INCREMENT NOT NULL,
@@ -118,6 +137,7 @@ CREATE TABLE IF NOT EXISTS Kunde_kauft_Produkt(
     `rabatt` DECIMAL(10,2),
 
     PRIMARY KEY (`kaufID`),
+
     FOREIGN KEY(`benutzerID`)
       REFERENCES `Kunde`(`benutzerID`)
       ON DELETE RESTRICT
@@ -127,4 +147,64 @@ CREATE TABLE IF NOT EXISTS Kunde_kauft_Produkt(
       REFERENCES `Produkt`(`produktID`)
       ON DELETE RESTRICT
       ON UPDATE CASCADE
+);
+
+# Kunde_bewertet_Produkt
+CREATE TABLE IF NOT EXISTS Kunde_bewertet_Produkt(
+    `benutzerID` VARCHAR(5) NOT NULL,
+    `produktID` VARCHAR(5) NOT NULL,
+    `sterne` INTEGER NOT NULL,
+    `kommentar` TEXT,
+    `verifiziert` BOOLEAN NOT NULL,
+    `datum` DATE NOT NULL,
+
+    PRIMARY KEY (`benutzerID`, `produktID`),
+
+    FOREIGN KEY(`benutzerID`)
+      REFERENCES `Kunde` (`benutzerID`)
+      ON DELETE RESTRICT
+      ON UPDATE CASCADE,
+
+    FOREIGN KEY(`produktID`)
+      REFERENCES `Produkt` (`produktID`)
+      ON DELETE RESTRICT
+      ON UPDATE CASCADE
+);
+
+# Kunde_wuenscht_Produkt
+CREATE TABLE IF NOT EXISTS Kunde_wuenscht_Produkt(
+  `benutzerID` VARCHAR(5) NOT NULL,
+  `produktID` VARCHAR(5) NOT NULL,
+  `datum` DATE NOT NULL,
+
+  PRIMARY KEY (`benutzerID`, `produktID`),
+
+  FOREIGN KEY (`benutzerID`)
+    REFERENCES `Kunde` (`benutzerID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE,
+
+  FOREIGN KEY (`produktID`)
+    REFERENCES `Produkt` (`produktID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
+);
+
+# Kunde_beobachtet_Produkt
+CREATE TABLE IF NOT EXISTS Kunde_beobachtet_Produkt(
+  `benutzerID` VARCHAR(5) NOT NULL,
+  `produktID` VARCHAR(5) NOT NULL,
+  `datum` DATE,
+
+  PRIMARY KEY (`benutzerID`, `produktID`),
+
+  FOREIGN KEY (`benutzerID`)
+    REFERENCES `Kunde` (`benutzerID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE,
+
+  FOREIGN KEY (`produktID`)
+    REFERENCES `Produkt` (`produktID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
 );

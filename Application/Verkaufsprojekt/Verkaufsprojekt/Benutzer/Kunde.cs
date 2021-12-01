@@ -109,6 +109,19 @@ namespace Verkaufsprojekt.Benutzer {
 
             return true;
         }
+
+        public void produktBewerten(Produkt produkt, byte sterne, string kommentar) {
+
+            if(sterne < 1 || sterne > 5) {
+                MessageBox.Show("Ungültige Anzahl an Sterne", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Bewertung bewertung = new Bewertung(this, sterne, kommentar, gekaufteProdukte.Contains(produkt));
+            produkt.Bewertungen.Add(bewertung);
+            MessageBox.Show("Produkt erfolgreich bewertet", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
     }
 
 }

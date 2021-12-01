@@ -46,11 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aufgabenbereich.cs" />
     <Compile Include="Benutzer\Autor.cs" />
     <Compile Include="Benutzer\Benutzer.cs" />
     <Compile Include="Benutzer\Kunde.cs" />
     <Compile Include="Benutzer\Mitarbeiter.cs" />
     <Compile Include="Bewertung.cs" />
+    <Compile Include="Entwicklerstatus.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +61,7 @@
     </Compile>
     <Compile Include="Produkt.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Programmiersprache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

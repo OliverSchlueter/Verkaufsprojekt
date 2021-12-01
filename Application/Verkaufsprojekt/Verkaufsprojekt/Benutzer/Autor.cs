@@ -8,7 +8,9 @@ namespace Verkaufsprojekt.Benutzer {
     class Autor : Benutzer {
 
         public static List<Autor> AUTOREN = new List<Autor>();
-        //TODO: Entwicklerstatus, Programmiersprachen
+
+        private List<Programmiersprache> programmiersprachen;
+        private Entwicklerstatus entwickerstatus;
 
         public Autor(
             string benutzerID,
@@ -18,8 +20,12 @@ namespace Verkaufsprojekt.Benutzer {
             string email,
             DateTime geburtsdatum,
             DateTime erstelldatum,
-            string passwort)
+            string passwort,
+            List<Programmiersprache> programmiersprachen,
+            Entwicklerstatus entwicklerstatus)
             : base(benutzerID, vorname, nachname, nickname, email, geburtsdatum, erstelldatum, passwort) {
+            this.programmiersprachen = programmiersprachen;
+            this.entwickerstatus = entwickerstatus;
 
         }
 

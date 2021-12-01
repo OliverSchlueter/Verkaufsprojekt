@@ -9,6 +9,8 @@ namespace Verkaufsprojekt.Benutzer {
 
         public static List<Mitarbeiter> MITARBEITER = new List<Mitarbeiter>();
 
+        private Aufgabenbereich aufgabenbereich;
+
         public Mitarbeiter(
             string benutzerID,
             string vorname,
@@ -17,9 +19,10 @@ namespace Verkaufsprojekt.Benutzer {
             string email,
             DateTime geburtsdatum,
             DateTime erstelldatum,
-            string passwort)
+            string passwort,
+            Aufgabenbereich aufgabenbereich)
             : base(benutzerID, vorname, nachname, nickname, email, geburtsdatum, erstelldatum, passwort) {
-
+            this.aufgabenbereich = aufgabenbereich;
         }
 
     }

@@ -24,6 +24,11 @@ namespace Verkaufsprojekt.Benutzer {
             : base(benutzerID, vorname, nachname, nickname, email, geburtsdatum, erstelldatum, passwort) {
             this.aufgabenbereich = aufgabenbereich;
         }
+        
+        public Mitarbeiter(Benutzer benutzer, Aufgabenbereich aufgabenbereich)
+        : base(benutzer.BenutzerID, benutzer.Vorname, benutzer.Nachname, benutzer.Nickname, benutzer.Email, benutzer.Geburtsdatum, benutzer.Erstelldatum, benutzer.Passwort) {
+            this.aufgabenbereich = aufgabenbereich;
+        }
 
     }
 }

@@ -22,11 +22,17 @@ namespace Verkaufsprojekt.Benutzer {
             DateTime erstelldatum,
             string passwort,
             List<Programmiersprache> programmiersprachen,
-            Entwicklerstatus entwicklerstatus)
+            Entwicklerstatus entwickerstatus)
             : base(benutzerID, vorname, nachname, nickname, email, geburtsdatum, erstelldatum, passwort) {
             this.programmiersprachen = programmiersprachen;
             this.entwickerstatus = entwickerstatus;
 
+        }
+
+        public Autor(Benutzer benutzer, List<Programmiersprache> programmiersprachen, Entwicklerstatus entwicklerstatus)
+            : base(benutzer.BenutzerID, benutzer.Vorname, benutzer.Nachname, benutzer.Nickname, benutzer.Email, benutzer.Geburtsdatum, benutzer.Erstelldatum, benutzer.Passwort) {
+            this.programmiersprachen = programmiersprachen;
+            this.entwickerstatus = entwicklerstatus;
         }
 
     }

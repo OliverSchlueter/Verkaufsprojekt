@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Verkaufsprojekt.Benutzer {
     class Benutzer {
@@ -26,8 +23,7 @@ namespace Verkaufsprojekt.Benutzer {
             string email, 
             DateTime geburtsdatum, 
             DateTime erstelldatum, 
-            string passwort) 
-        {
+            string passwort) {
             this.benutzerID = benutzerID;
             this.vorname = vorname;
             this.nachname = nachname;

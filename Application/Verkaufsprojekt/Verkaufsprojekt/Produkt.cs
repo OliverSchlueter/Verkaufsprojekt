@@ -23,8 +23,7 @@ namespace Verkaufsprojekt {
             float preis, 
             string beschreibung, 
             DateTime veröffenetlichungsdatum,
-            List<Bewertung> bewertungen) 
-        {
+            List<Bewertung> bewertungen) {
             this.id = id;
             this.name = name;
             this.autoren = autoren;

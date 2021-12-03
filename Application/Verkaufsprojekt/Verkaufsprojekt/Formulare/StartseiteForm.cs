@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Verkaufsprojekt {
-    public partial class Form1 : Form {
-        public Form1() {
+namespace Verkaufsprojekt.Formulare {
+    public partial class StartseiteForm : BaseForm {
+        public StartseiteForm() {
             InitializeComponent();
         }
     }

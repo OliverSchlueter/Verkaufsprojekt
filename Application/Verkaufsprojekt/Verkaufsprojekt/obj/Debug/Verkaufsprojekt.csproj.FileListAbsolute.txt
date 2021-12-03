@@ -1,0 +1,11 @@
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\bin\Debug\Verkaufsprojekt.exe.config
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\bin\Debug\Verkaufsprojekt.exe
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\bin\Debug\Verkaufsprojekt.pdb
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.csprojAssemblyReference.cache
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Formulare.BaseForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Properties.Resources.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.csproj.GenerateResource.cache
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.csproj.CoreCompileInputs.cache
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.exe
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.pdb
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Formulare.StartseiteForm.resources

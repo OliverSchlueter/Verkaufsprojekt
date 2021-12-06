@@ -42,5 +42,24 @@ namespace Verkaufsprojekt.Benutzer {
         public DateTime Geburtsdatum { get => geburtsdatum; set => geburtsdatum = value; }
         public DateTime Erstelldatum { get => erstelldatum; set => erstelldatum = value; }
         public string Passwort { get => passwort; set => passwort = value; }
+
+        public static void loadFromDB() {
+            List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM benutzer");
+
+            foreach (object[] row in data) {
+                Benutzer benutzer = new Benutzer(
+                    (string) row[0], 
+                    (string) row[1], 
+                    (string) row[2], 
+                    (string) row[3], 
+                    (string) row[4], 
+                    (DateTime) row[5], 
+                    (DateTime) row[6],
+                    (string) row[7]
+                    );
+
+                BENUTZER.Add(benutzer);
+            }
+        }
     }
 }

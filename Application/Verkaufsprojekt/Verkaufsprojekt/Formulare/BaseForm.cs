@@ -22,6 +22,5 @@ namespace Verkaufsprojekt.Formulare {
                 tsm_geheZu_produkte.Enabled = false;
             }
         }
-
     }
 }

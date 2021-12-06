@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=MariaDB ODBC 3.1 Driver
+UID=root
+PORT=3306
+DATABASE=verkaufsprojekt
+SERVER=localhost
+TCPIP=1

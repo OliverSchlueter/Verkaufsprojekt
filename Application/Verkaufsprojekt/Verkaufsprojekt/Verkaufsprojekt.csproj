@@ -52,6 +52,7 @@
     <Compile Include="Benutzer\Kunde.cs" />
     <Compile Include="Benutzer\Mitarbeiter.cs" />
     <Compile Include="Bewertung.cs" />
+    <Compile Include="DatabaseManager.cs" />
     <Compile Include="Entwicklerstatus.cs" />
     <Compile Include="Formulare\BaseForm.cs">
       <SubType>Form</SubType>

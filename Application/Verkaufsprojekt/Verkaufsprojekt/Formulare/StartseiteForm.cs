@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,9 @@ using System.Windows.Forms;
 namespace Verkaufsprojekt.Formulare {
     public partial class StartseiteForm : BaseForm {
         public StartseiteForm() {
+
             InitializeComponent();
-        }
+
+		}
     }
 }

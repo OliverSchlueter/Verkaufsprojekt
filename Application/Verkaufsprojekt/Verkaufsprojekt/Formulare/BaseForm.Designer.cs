@@ -39,12 +39,14 @@ namespace Verkaufsprojekt.Formulare {
             // menuStrip
             // 
             this.menuStrip.Font = new System.Drawing.Font("Malgun Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsm_geheZu,
             this.tsm_profil});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
+            this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip.Size = new System.Drawing.Size(1011, 38);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip";
@@ -85,32 +87,32 @@ namespace Verkaufsprojekt.Formulare {
             // tsm_profil_login
             // 
             this.tsm_profil_login.Name = "tsm_profil_login";
-            this.tsm_profil_login.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_login.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_login.Text = "Login";
             // 
             // tsm_profil_registieren
             // 
             this.tsm_profil_registieren.Name = "tsm_profil_registieren";
-            this.tsm_profil_registieren.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_registieren.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_registieren.Text = "Registieren";
             // 
             // tsm_profil_logout
             // 
             this.tsm_profil_logout.Name = "tsm_profil_logout";
-            this.tsm_profil_logout.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_logout.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_logout.Text = "Logout";
             // 
             // tsm_profil_einstellungen
             // 
             this.tsm_profil_einstellungen.Name = "tsm_profil_einstellungen";
-            this.tsm_profil_einstellungen.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_einstellungen.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_einstellungen.Text = "Einstellungen";
             // 
             // BaseForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1011, 602);
+            this.ClientSize = new System.Drawing.Size(1011, 644);
             this.Controls.Add(this.menuStrip);
             this.Font = new System.Drawing.Font("Malgun Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

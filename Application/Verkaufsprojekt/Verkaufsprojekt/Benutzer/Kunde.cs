@@ -11,9 +11,14 @@ namespace Verkaufsprojekt.Benutzer {
         public static List<Kunde> KUNDEN = new List<Kunde>();
 
         private float guthaben;
-        private List<Produkt> gekaufteProdukte;
-        private List<Produkt> beobachtungsliste;
-        private List<Produkt> wunschliste;
+        private List<Produkt> gekaufteProdukte; //TODO: add GekauftProdukt with datum and rabatt
+        private List<Produkt> beobachtungsliste; //TODO: add BeobachtetProdukt with datum
+        private List<Produkt> wunschliste; //TODO: add WunschProdukt with datum
+
+        public float Guthaben { get => guthaben; set => guthaben = value; }
+        internal List<Produkt> GekaufteProdukte { get => gekaufteProdukte; set => gekaufteProdukte = value; }
+        internal List<Produkt> Beobachtungsliste { get => beobachtungsliste; set => beobachtungsliste = value; }
+        internal List<Produkt> Wunschliste { get => wunschliste; set => wunschliste = value; }
 
         public Kunde(
             string benutzerID,
@@ -121,6 +126,20 @@ namespace Verkaufsprojekt.Benutzer {
             produkt.Bewertungen.Add(bewertung);
             MessageBox.Show("Produkt erfolgreich bewertet", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        public static void LoadFromDB() {
+            Console.WriteLine("Loading all Kunde from DB");
+
+            List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM kunde");
+
+            foreach(object[] row in data) {
+                Kunde kunde = new Kunde(Benutzer.getBenutzerFromID((string)row[0]), (float)row[1], null, null, null);
+
+                KUNDEN.Add(kunde);
+            }
+
+            Console.WriteLine("Loaded all Kunde from DB");
         }
     }
 

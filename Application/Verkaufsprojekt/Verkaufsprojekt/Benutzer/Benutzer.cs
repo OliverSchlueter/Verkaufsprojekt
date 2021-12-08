@@ -43,7 +43,19 @@ namespace Verkaufsprojekt.Benutzer {
         public DateTime Erstelldatum { get => erstelldatum; set => erstelldatum = value; }
         public string Passwort { get => passwort; set => passwort = value; }
 
-        public static void loadFromDB() {
+        public static Benutzer getBenutzerFromID(string id) {
+            foreach(Benutzer b in BENUTZER) {
+                if (b.BenutzerID.ToLower().Equals(id)) {
+                    return b;
+                }
+            }
+
+            return null;
+        }
+
+        public static void LoadFromDB() {
+            Console.WriteLine("Loading all Benutzer from DB");
+
             List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM benutzer");
 
             foreach (object[] row in data) {
@@ -60,6 +72,8 @@ namespace Verkaufsprojekt.Benutzer {
 
                 BENUTZER.Add(benutzer);
             }
+
+            Console.WriteLine("Loaded all Benutzer from DB");
         }
     }
 }

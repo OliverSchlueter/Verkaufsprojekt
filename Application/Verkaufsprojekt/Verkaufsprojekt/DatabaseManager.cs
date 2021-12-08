@@ -81,6 +81,9 @@ namespace Verkaufsprojekt {
 			return data;
 		}
 
+		/**
+		 * Do not use
+		 */
 		private static void example() {
 			List<object[]> data = DatabaseManager.Database.GetData("SELECT vorname, nachname FROM benutzer");
 

@@ -12,10 +12,10 @@ namespace Verkaufsprojekt.Formulare {
     public partial class BaseForm : Form {
         public BaseForm() {
             InitializeComponent();
-            updateMenuStrip();
         }
 
         public void updateMenuStrip() {
+            Console.WriteLine("Updating menu strip");
             if(Program.BENUTZER == null) {
                 tsm_profil_logout.Enabled = false;
                 tsm_profil_einstellungen.Enabled = false;

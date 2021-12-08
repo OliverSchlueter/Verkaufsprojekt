@@ -9,6 +9,8 @@ using Verkaufsprojekt.Benutzer;
 namespace Verkaufsprojekt {
     static class Program {
 
+        public static string VERSION { get { return "1.0.0 SNAPSHOT"; } }
+
         public static BaseForm BASEFORM = null;
         public static StartseiteForm STARTSEITEFORM = null;
 
@@ -19,7 +21,9 @@ namespace Verkaufsprojekt {
             
             DatabaseManager.Database = new DatabaseManager("Provider=Microsoft.ACE.OLEDB.12.0;" + "Data Source = Database.accdb");
 
-            Benutzer.Benutzer.loadFromDB();
+            Benutzer.Benutzer.LoadFromDB();
+            Autor.LoadFromDB();
+            Kunde.LoadFromDB();
 
 
             BASEFORM = new BaseForm();

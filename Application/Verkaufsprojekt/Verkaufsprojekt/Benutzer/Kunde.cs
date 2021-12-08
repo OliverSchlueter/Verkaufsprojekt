@@ -128,7 +128,7 @@ namespace Verkaufsprojekt.Benutzer {
 
         }
 
-        public static void LoadFromDB() {
+        new public static void LoadFromDB() {
             Console.WriteLine("Loading all Kunde from DB");
 
             List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM kunde");

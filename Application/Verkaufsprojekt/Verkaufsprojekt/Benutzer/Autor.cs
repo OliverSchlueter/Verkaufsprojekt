@@ -40,7 +40,7 @@ namespace Verkaufsprojekt.Benutzer {
         internal Entwicklerstatus Entwickerstatus { get => entwickerstatus; set => entwickerstatus = value; }
 
 
-        public static void LoadFromDB() {
+        new public static void LoadFromDB() {
             Console.WriteLine("Loading all Autor from DB");
 
             List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM autor, autor_schreibt_produkt WHERE autor_schreibt_produkt.benutzerID = autor.benutzerID");

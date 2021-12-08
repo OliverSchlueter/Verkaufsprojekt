@@ -83,6 +83,24 @@ CREATE TABLE IF NOT EXISTS Produkt(
   PRIMARY KEY (`produktID`)
 );
 
+# Autor_schreibt_Produkt
+CREATE TABLE IF NOT EXISTS Autor_schreibt_Produkt(
+  `benutzerID` VARCHAR(5) NOT NULL,
+  `produktID` VARCHAR(5) NOT NULL,
+
+  PRIMARY KEY (`benutzerID`, `produktID`),
+
+  FOREIGN KEY(`benutzerID`)
+    REFERENCES `Autor`(`benutzerID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE,
+
+  FOREIGN KEY(`produktID`)
+    REFERENCES `Produkt`(`produktID`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
+);
+
 # Aufgabenbereich
 CREATE TABLE IF NOT EXISTS Aufgabenbereich(
   `aufgabenbereichsID` INTEGER AUTO_INCREMENT NOT NULL,

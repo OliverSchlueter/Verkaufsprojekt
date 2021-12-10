@@ -9,7 +9,7 @@ using Verkaufsprojekt.Benutzer;
 namespace Verkaufsprojekt {
     static class Program {
 
-        public static string VERSION { get { return "1.0.1 SNAPSHOT"; } }
+        public static string VERSION { get { return "1.0.2 SNAPSHOT"; } }
 
         public static BaseForm BASEFORM = null;
         public static StartseiteForm STARTSEITEFORM = null;

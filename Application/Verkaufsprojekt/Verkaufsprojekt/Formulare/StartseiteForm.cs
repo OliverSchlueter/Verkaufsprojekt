@@ -15,7 +15,6 @@ namespace Verkaufsprojekt.Formulare {
 
             InitializeComponent();
             updateMenuStrip();
-
 		}
     }
 }

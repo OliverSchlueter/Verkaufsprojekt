@@ -60,7 +60,7 @@ namespace Verkaufsprojekt.Benutzer {
                 return false;
             }
 
-            DialogResult kaufBestaetigung = MessageBox.Show("Wollen Sie das Produk(" + produkt.ID + ") wirklich kaufen?", "Kauf", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult kaufBestaetigung = MessageBox.Show("Wollen Sie das Produkt (" + produkt.ID + ") wirklich kaufen?", "Kauf", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (kaufBestaetigung != DialogResult.Yes) {
                 MessageBox.Show("Erfolgreich Kauf abgebrochen", "Kaufabbruch", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -69,6 +69,9 @@ namespace Verkaufsprojekt.Benutzer {
 
             this.gekaufteProdukte.Add(produkt);
             this.guthaben -= produkt.Preis;
+
+            DatabaseManager.Database.execute("INSERT INTO kunde_kauft_produkt VALUES(null, '" + BenutzerID + "', '" + produkt.ID + "', '" + DateTime.Now.ToString() + "', 0)");
+            DatabaseManager.Database.execute("UPDATE kunde SET guthaben=" + this.guthaben + " WHERE benutzerID='" + BenutzerID + "'");
 
             MessageBox.Show("Sie haben das Produkt (" + produkt.ID + ") erfolgreich gekauft", "Kaufbestätigung", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -128,13 +131,24 @@ namespace Verkaufsprojekt.Benutzer {
 
         }
 
+        public static Kunde getKundeFromID(string id) {
+            foreach (Kunde k in KUNDEN) {
+                if (k.BenutzerID == id) {
+                    return k;
+                }
+            }
+
+            return null;
+        }
+
         new public static void LoadFromDB() {
             Console.WriteLine("Loading all Kunde from DB");
 
             List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM kunde");
 
             foreach(object[] row in data) {
-                Kunde kunde = new Kunde(Benutzer.getBenutzerFromID((string)row[0]), (float)row[1], null, null, null);
+                Benutzer b = getBenutzerFromID((string)row[0]);
+                Kunde kunde = new Kunde(b, (float)((double)row[1]), new List<Produkt>(), new List<Produkt>(), new List<Produkt>());
 
                 KUNDEN.Add(kunde);
             }

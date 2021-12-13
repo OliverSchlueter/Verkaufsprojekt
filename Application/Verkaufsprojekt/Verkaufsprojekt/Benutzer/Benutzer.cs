@@ -45,7 +45,7 @@ namespace Verkaufsprojekt.Benutzer {
 
         public static Benutzer getBenutzerFromID(string id) {
             foreach(Benutzer b in BENUTZER) {
-                if (b.BenutzerID.ToLower().Equals(id)) {
+                if (b.BenutzerID == id) {
                     return b;
                 }
             }

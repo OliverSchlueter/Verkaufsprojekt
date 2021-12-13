@@ -22,23 +22,28 @@ namespace Verkaufsprojekt.Formulare {
                 tsm_profil_logout.Enabled = false;
                 tsm_profil_einstellungen.Enabled = false;
                 tsm_geheZu_produkte.Enabled = false;
+                tsm_geheZu_gekaufte_produkte.Enabled = false;
             } else {
                 tsm_profil_login.Enabled = false;
                 tsm_profil_registieren.Enabled = false;
                 tsm_profil_logout.Enabled = true;
                 tsm_profil_einstellungen.Enabled = true;
                 tsm_geheZu_produkte.Enabled = true;
+                tsm_geheZu_gekaufte_produkte.Enabled = true;
             }
         }
 
         private void tsm_geheZu_startseite_Click(object sender, EventArgs e) {
             Console.WriteLine("Navigating to Startseite");
-            //TODO: open startseite
+            Visible = false;
+            Program.STARTSEITEFORM.Visible = true;
         }
 
         private void tsm_geheZu_produkte_Click(object sender, EventArgs e) {
             Console.WriteLine("Navigating to Produkte");
-            //TODO: open produkte
+            ProdukteForm produkteForm = new ProdukteForm();
+            produkteForm.Show();
+            Visible = false;
         }
 
         private void tsm_profil_login_Click(object sender, EventArgs e) {
@@ -46,6 +51,11 @@ namespace Verkaufsprojekt.Formulare {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             Visible = false;
+        }
+
+        private void tsm_geheZu_gekaufte_produkte_Click(object sender, EventArgs e) {
+            Console.WriteLine("Navigating to Gekaufte produkte");
+            //TODO: open form
         }
     }
 }

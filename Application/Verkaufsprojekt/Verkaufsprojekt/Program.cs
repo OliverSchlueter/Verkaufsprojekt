@@ -9,7 +9,7 @@ using Verkaufsprojekt.Benutzer;
 namespace Verkaufsprojekt {
     static class Program {
 
-        public static string VERSION { get { return "1.0.2 SNAPSHOT"; } }
+        public static string VERSION { get { return "1.0.3 SNAPSHOT"; } }
 
         public static BaseForm BASEFORM = null;
         public static StartseiteForm STARTSEITEFORM = null;
@@ -26,6 +26,7 @@ namespace Verkaufsprojekt {
             Benutzer.Benutzer.LoadFromDB();
             Autor.LoadFromDB();
             Kunde.LoadFromDB();
+            Produkt.LoadFromDB();
 
 
             BASEFORM = new BaseForm();

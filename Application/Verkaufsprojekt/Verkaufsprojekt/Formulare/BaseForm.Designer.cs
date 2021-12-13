@@ -33,6 +33,7 @@ namespace Verkaufsprojekt.Formulare {
             this.tsm_profil_registieren = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil_logout = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil_einstellungen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_geheZu_gekaufte_produkte = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@ namespace Verkaufsprojekt.Formulare {
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip.Size = new System.Drawing.Size(1011, 40);
+            this.menuStrip.Size = new System.Drawing.Size(1011, 38);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -55,22 +56,23 @@ namespace Verkaufsprojekt.Formulare {
             // 
             this.tsm_geheZu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsm_geheZu_startseite,
-            this.tsm_geheZu_produkte});
+            this.tsm_geheZu_produkte,
+            this.tsm_geheZu_gekaufte_produkte});
             this.tsm_geheZu.Name = "tsm_geheZu";
-            this.tsm_geheZu.Size = new System.Drawing.Size(112, 36);
+            this.tsm_geheZu.Size = new System.Drawing.Size(112, 34);
             this.tsm_geheZu.Text = "Gehe zu";
             // 
             // tsm_geheZu_startseite
             // 
             this.tsm_geheZu_startseite.Name = "tsm_geheZu_startseite";
-            this.tsm_geheZu_startseite.Size = new System.Drawing.Size(210, 38);
+            this.tsm_geheZu_startseite.Size = new System.Drawing.Size(304, 38);
             this.tsm_geheZu_startseite.Text = "Startseite";
             this.tsm_geheZu_startseite.Click += new System.EventHandler(this.tsm_geheZu_startseite_Click);
             // 
             // tsm_geheZu_produkte
             // 
             this.tsm_geheZu_produkte.Name = "tsm_geheZu_produkte";
-            this.tsm_geheZu_produkte.Size = new System.Drawing.Size(210, 38);
+            this.tsm_geheZu_produkte.Size = new System.Drawing.Size(304, 38);
             this.tsm_geheZu_produkte.Text = "Produkte";
             this.tsm_geheZu_produkte.Click += new System.EventHandler(this.tsm_geheZu_produkte_Click);
             // 
@@ -83,7 +85,7 @@ namespace Verkaufsprojekt.Formulare {
             this.tsm_profil_logout,
             this.tsm_profil_einstellungen});
             this.tsm_profil.Name = "tsm_profil";
-            this.tsm_profil.Size = new System.Drawing.Size(80, 36);
+            this.tsm_profil.Size = new System.Drawing.Size(80, 34);
             this.tsm_profil.Text = "Profil";
             // 
             // tsm_profil_login
@@ -110,6 +112,13 @@ namespace Verkaufsprojekt.Formulare {
             this.tsm_profil_einstellungen.Name = "tsm_profil_einstellungen";
             this.tsm_profil_einstellungen.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_einstellungen.Text = "Einstellungen";
+            // 
+            // tsm_geheZu_gekaufte_produkte
+            // 
+            this.tsm_geheZu_gekaufte_produkte.Name = "tsm_geheZu_gekaufte_produkte";
+            this.tsm_geheZu_gekaufte_produkte.Size = new System.Drawing.Size(304, 38);
+            this.tsm_geheZu_gekaufte_produkte.Text = "Gekaufte Produkte";
+            this.tsm_geheZu_gekaufte_produkte.Click += new System.EventHandler(this.tsm_geheZu_gekaufte_produkte_Click);
             // 
             // BaseForm
             // 
@@ -142,5 +151,6 @@ namespace Verkaufsprojekt.Formulare {
         private System.Windows.Forms.ToolStripMenuItem tsm_profil_registieren;
         private System.Windows.Forms.ToolStripMenuItem tsm_profil_logout;
         private System.Windows.Forms.ToolStripMenuItem tsm_profil_einstellungen;
+        private System.Windows.Forms.ToolStripMenuItem tsm_geheZu_gekaufte_produkte;
     }
 }

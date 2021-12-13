@@ -8,6 +8,8 @@ using Verkaufsprojekt.Benutzer;
 namespace Verkaufsprojekt {
     class Produkt {
 
+        public static List<Produkt> PRODUKTE = new List<Produkt>();
+
         private string id;
         private string name;
         private List<Autor> autoren;
@@ -40,5 +42,29 @@ namespace Verkaufsprojekt {
         public DateTime Veröffenetlichungsdatum { get => veröffenetlichungsdatum; set => veröffenetlichungsdatum = value; }
         internal List<Autor> Autoren { get => autoren; set => autoren = value; }
         internal List<Bewertung> Bewertungen { get => bewertungen; set => bewertungen = value; }
+
+
+        public static Produkt GetProduktFromID(string id) {
+            foreach(Produkt p in PRODUKTE) {
+                if (p.ID == id) {
+                    return p;
+                }
+            }
+
+            return null;
+        }
+
+        public static void LoadFromDB() {
+            Console.WriteLine("Loading all Produkt from DB");
+
+            List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM produkt");
+
+            foreach (object[] row in data) {
+                Produkt produkt = new Produkt((string)row[0], (string)row[1], null, (float)((double)row[2]), (string)row[3], Convert.ToDateTime(row[4]), null);
+                PRODUKTE.Add(produkt);
+            }
+
+            Console.WriteLine("Loaded all Produkt from DB");
+        }
     }
 }

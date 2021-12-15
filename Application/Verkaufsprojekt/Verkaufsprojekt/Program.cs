@@ -25,8 +25,8 @@ namespace Verkaufsprojekt {
 
             Benutzer.Benutzer.LoadFromDB();
             Autor.LoadFromDB();
-            Kunde.LoadFromDB();
             Produkt.LoadFromDB();
+            Kunde.LoadFromDB();
 
 
             BASEFORM = new BaseForm();

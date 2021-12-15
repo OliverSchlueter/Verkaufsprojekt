@@ -55,7 +55,9 @@ namespace Verkaufsprojekt.Formulare {
 
         private void tsm_geheZu_gekaufte_produkte_Click(object sender, EventArgs e) {
             Console.WriteLine("Navigating to Gekaufte produkte");
-            //TODO: open form
+            GekaufteProdukteForm gekaufteProdukteForm = new GekaufteProdukteForm();
+            gekaufteProdukteForm.Show();
+            Visible = false;
         }
     }
 }

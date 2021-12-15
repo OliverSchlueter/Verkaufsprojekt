@@ -29,7 +29,9 @@ namespace Verkaufsprojekt.Formulare {
                 tsm_profil_logout.Enabled = true;
                 tsm_profil_einstellungen.Enabled = true;
                 tsm_geheZu_produkte.Enabled = true;
-                tsm_geheZu_gekaufte_produkte.Enabled = true;
+                if (Benutzer.Kunde.getKundeFromID(Program.BENUTZER.BenutzerID) != null) {
+                    tsm_geheZu_gekaufte_produkte.Enabled = true;
+                }
             }
         }
 
@@ -57,6 +59,33 @@ namespace Verkaufsprojekt.Formulare {
             Console.WriteLine("Navigating to Gekaufte produkte");
             GekaufteProdukteForm gekaufteProdukteForm = new GekaufteProdukteForm();
             gekaufteProdukteForm.Show();
+            Visible = false;
+        }
+
+        private void tsm_profil_logout_Click(object sender, EventArgs e) {
+
+            DialogResult logoutDialog = MessageBox.Show("Wollen sie sich wirklich ausloggen?", "Ausloggen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(logoutDialog != DialogResult.Yes) {
+                return;
+            }
+
+            Console.WriteLine("Logging out Benutzer: " + Program.BENUTZER.BenutzerID);
+            Program.BENUTZER = null;
+            
+            if(Name != Program.STARTSEITEFORM.Name) {
+                Program.STARTSEITEFORM.Visible = true;
+                Visible = false;
+            }
+
+            Program.STARTSEITEFORM.updateMenuStrip();
+            MessageBox.Show("Erfolgreich ausgeloggt", "Ausloggen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void tsm_profil_registieren_Click(object sender, EventArgs e) {
+            Console.WriteLine("Navigating to Registieren");
+            RegistierenForm registierenForm = new RegistierenForm();
+            registierenForm.Show();
             Visible = false;
         }
     }

@@ -81,6 +81,12 @@
     <Compile Include="Formulare\ProdukteForm.Designer.cs">
       <DependentUpon>ProdukteForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulare\RegistierenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulare\RegistierenForm.Designer.cs">
+      <DependentUpon>RegistierenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulare\StartseiteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulare\ProdukteForm.resx">
       <DependentUpon>ProdukteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulare\RegistierenForm.resx">
+      <DependentUpon>RegistierenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulare\StartseiteForm.resx">
       <DependentUpon>StartseiteForm.cs</DependentUpon>

@@ -201,7 +201,7 @@ namespace Verkaufsprojekt.Formulare {
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_produkte);
             this.Name = "GekaufteProdukteForm";
-            this.Text = "GekaufteProdukteForm";
+            this.Text = "Gekaufte Produkte";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GekaufteProdukteForm_FormClosing);
             this.Load += new System.EventHandler(this.GekaufteProdukteForm_Load);
             this.Controls.SetChildIndex(this.dgv_produkte, 0);

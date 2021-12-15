@@ -43,6 +43,11 @@ namespace Verkaufsprojekt.Benutzer {
         public DateTime Erstelldatum { get => erstelldatum; set => erstelldatum = value; }
         public string Passwort { get => passwort; set => passwort = value; }
 
+        public static string GenerateNewBenutzerID() {
+            //TODO: generate benutzer id
+            return DateTime.Now.Second + "abc";
+        }
+
         public static Benutzer getBenutzerFromID(string id) {
             foreach(Benutzer b in BENUTZER) {
                 if (b.BenutzerID == id) {

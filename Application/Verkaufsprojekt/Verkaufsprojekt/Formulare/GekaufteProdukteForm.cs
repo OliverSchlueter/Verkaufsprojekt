@@ -39,8 +39,12 @@ namespace Verkaufsprojekt.Formulare {
         */
         private void refreshDgv() {
             dgv_produkte.Rows.Clear();
-            foreach (Produkt p in Kunde.getKundeFromID(Program.BENUTZER.BenutzerID).GekaufteProdukte) {
-                dgv_produkte.Rows.Add(p.ID, p.Name, p.Preis + " €");
+            try {
+                foreach (Produkt p in Kunde.getKundeFromID(Program.BENUTZER.BenutzerID).GekaufteProdukte) {
+                    dgv_produkte.Rows.Add(p.ID, p.Name, p.Preis + " €");
+                }
+            } catch(Exception e) {
+                MessageBox.Show("Ein Fehler ist aufgetreten.");
             }
 
         }

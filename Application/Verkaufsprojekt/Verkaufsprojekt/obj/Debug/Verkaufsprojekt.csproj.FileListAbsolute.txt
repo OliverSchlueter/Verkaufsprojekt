@@ -12,3 +12,4 @@ D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufspr
 D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Formulare.LoginForm.resources
 D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Formulare.ProdukteForm.resources
 D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Formulare.GekaufteProdukteForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Debug\Verkaufsprojekt.Formulare.RegistierenForm.resources

@@ -102,7 +102,7 @@ namespace Verkaufsprojekt.Formulare {
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_benutzerID);
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.Controls.SetChildIndex(this.tb_benutzerID, 0);
             this.Controls.SetChildIndex(this.label1, 0);

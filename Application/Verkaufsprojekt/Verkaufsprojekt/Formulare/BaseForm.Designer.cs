@@ -28,12 +28,12 @@ namespace Verkaufsprojekt.Formulare {
             this.tsm_geheZu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_geheZu_startseite = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_geheZu_produkte = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_geheZu_gekaufte_produkte = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil_login = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil_registieren = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil_logout = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_profil_einstellungen = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsm_geheZu_gekaufte_produkte = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,13 @@ namespace Verkaufsprojekt.Formulare {
             this.tsm_geheZu_produkte.Text = "Produkte";
             this.tsm_geheZu_produkte.Click += new System.EventHandler(this.tsm_geheZu_produkte_Click);
             // 
+            // tsm_geheZu_gekaufte_produkte
+            // 
+            this.tsm_geheZu_gekaufte_produkte.Name = "tsm_geheZu_gekaufte_produkte";
+            this.tsm_geheZu_gekaufte_produkte.Size = new System.Drawing.Size(304, 38);
+            this.tsm_geheZu_gekaufte_produkte.Text = "Gekaufte Produkte";
+            this.tsm_geheZu_gekaufte_produkte.Click += new System.EventHandler(this.tsm_geheZu_gekaufte_produkte_Click);
+            // 
             // tsm_profil
             // 
             this.tsm_profil.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -91,34 +98,29 @@ namespace Verkaufsprojekt.Formulare {
             // tsm_profil_login
             // 
             this.tsm_profil_login.Name = "tsm_profil_login";
-            this.tsm_profil_login.Size = new System.Drawing.Size(249, 38);
+            this.tsm_profil_login.Size = new System.Drawing.Size(270, 38);
             this.tsm_profil_login.Text = "Login";
             this.tsm_profil_login.Click += new System.EventHandler(this.tsm_profil_login_Click);
             // 
             // tsm_profil_registieren
             // 
             this.tsm_profil_registieren.Name = "tsm_profil_registieren";
-            this.tsm_profil_registieren.Size = new System.Drawing.Size(249, 38);
+            this.tsm_profil_registieren.Size = new System.Drawing.Size(270, 38);
             this.tsm_profil_registieren.Text = "Registieren";
+            this.tsm_profil_registieren.Click += new System.EventHandler(this.tsm_profil_registieren_Click);
             // 
             // tsm_profil_logout
             // 
             this.tsm_profil_logout.Name = "tsm_profil_logout";
-            this.tsm_profil_logout.Size = new System.Drawing.Size(249, 38);
+            this.tsm_profil_logout.Size = new System.Drawing.Size(270, 38);
             this.tsm_profil_logout.Text = "Logout";
+            this.tsm_profil_logout.Click += new System.EventHandler(this.tsm_profil_logout_Click);
             // 
             // tsm_profil_einstellungen
             // 
             this.tsm_profil_einstellungen.Name = "tsm_profil_einstellungen";
-            this.tsm_profil_einstellungen.Size = new System.Drawing.Size(249, 38);
+            this.tsm_profil_einstellungen.Size = new System.Drawing.Size(270, 38);
             this.tsm_profil_einstellungen.Text = "Einstellungen";
-            // 
-            // tsm_geheZu_gekaufte_produkte
-            // 
-            this.tsm_geheZu_gekaufte_produkte.Name = "tsm_geheZu_gekaufte_produkte";
-            this.tsm_geheZu_gekaufte_produkte.Size = new System.Drawing.Size(304, 38);
-            this.tsm_geheZu_gekaufte_produkte.Text = "Gekaufte Produkte";
-            this.tsm_geheZu_gekaufte_produkte.Click += new System.EventHandler(this.tsm_geheZu_gekaufte_produkte_Click);
             // 
             // BaseForm
             // 

@@ -200,8 +200,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // ProdukteForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1034, 861);
             this.Controls.Add(this.btn_kaufen);
             this.Controls.Add(this.rtb_beschreibung);

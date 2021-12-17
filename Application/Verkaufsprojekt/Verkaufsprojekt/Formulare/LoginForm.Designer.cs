@@ -92,8 +92,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(387, 370);
             this.Controls.Add(this.cb_benutzer);
             this.Controls.Add(this.btn_login);

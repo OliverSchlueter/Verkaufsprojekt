@@ -12,6 +12,7 @@ namespace Verkaufsprojekt.Formulare {
     public partial class RegistierenForm : BaseForm {
         public RegistierenForm() {
             InitializeComponent();
+            updateMenuStrip();
         }
 
         private void RegistierenForm_FormClosing(object sender, FormClosingEventArgs e) {
@@ -51,6 +52,12 @@ namespace Verkaufsprojekt.Formulare {
                 MessageBox.Show("Bitte füllen sie das Feld Passwort aus", "Registieren", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            if(passwort.Length < 8) {
+                MessageBox.Show("Bitte wählen sie ein Passwort, welches länger als 8 Zeichen ist", "Registieren", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
 
             //TODO: further checks if valid
 

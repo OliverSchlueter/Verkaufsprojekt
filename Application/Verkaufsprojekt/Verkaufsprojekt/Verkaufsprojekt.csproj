@@ -63,6 +63,12 @@
     <Compile Include="Formulare\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulare\EinstellungForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulare\EinstellungForm.Designer.cs">
+      <DependentUpon>EinstellungForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulare\GekaufteProdukteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formulare\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulare\EinstellungForm.resx">
+      <DependentUpon>EinstellungForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulare\GekaufteProdukteForm.resx">
       <DependentUpon>GekaufteProdukteForm.cs</DependentUpon>

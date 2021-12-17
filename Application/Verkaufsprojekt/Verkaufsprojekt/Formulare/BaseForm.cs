@@ -88,5 +88,12 @@ namespace Verkaufsprojekt.Formulare {
             registierenForm.Show();
             Visible = false;
         }
+
+        private void tsm_profil_einstellungen_Click(object sender, EventArgs e) {
+            Console.WriteLine("Navigating to Einstellungen");
+            EinstellungForm einstellungForm = new EinstellungForm();
+            einstellungForm.Show();
+            Visible = false;
+        }
     }
 }

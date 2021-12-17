@@ -121,6 +121,7 @@ namespace Verkaufsprojekt.Formulare {
             this.tsm_profil_einstellungen.Name = "tsm_profil_einstellungen";
             this.tsm_profil_einstellungen.Size = new System.Drawing.Size(270, 38);
             this.tsm_profil_einstellungen.Text = "Einstellungen";
+            this.tsm_profil_einstellungen.Click += new System.EventHandler(this.tsm_profil_einstellungen_Click);
             // 
             // BaseForm
             // 

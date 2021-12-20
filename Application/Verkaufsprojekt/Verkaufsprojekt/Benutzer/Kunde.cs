@@ -11,7 +11,8 @@ namespace Verkaufsprojekt.Benutzer {
         public static List<Kunde> KUNDEN = new List<Kunde>();
 
         private float guthaben;
-        private List<Produkt> gekaufteProdukte; //TODO: add GekauftProdukt with datum and rabatt
+        private List<Produkt> gekaufteProdukte; //
+                                                //add GekauftProdukt with datum and rabatt
         private List<Produkt> beobachtungsliste; //TODO: add BeobachtetProdukt with datum
         private List<Produkt> wunschliste; //TODO: add WunschProdukt with datum
 

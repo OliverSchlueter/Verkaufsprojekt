@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Hallo und herzlich willkommen in diesen Software-Kauf-Laden. Hier können Sie schnell und einfach Software von eine vielzahl von Autoren kaufen. Eine Übersicht von allen Produkten finden Sie auf der Seite Produkte. Wenn Sie noch kein Benutzerprofil haben, können sie sich im Reiter Profil registieren und einloggen.</value>
-  </data>
 </root>

@@ -67,6 +67,47 @@ namespace Verkaufsprojekt.Formulare {
             lbl_preis.Text = produkt.Preis + " €";
             lbl_datum.Text = produkt.Veröffenetlichungsdatum.ToShortDateString();
             rtb_beschreibung.Text = produkt.Beschreibung;
+
+            foreach(Bewertung bewertung in produkt.Bewertungen) {
+                dgv_bewertungen.Rows.Add(bewertung.Kunde.BenutzerID, bewertung.Sterne, bewertung.Kommentar);
+            }
+        }
+
+        private void btn_bewerten_Click(object sender, EventArgs e) {
+            string kommentar = rtb_bewertung.Text;
+            int sterne = tb_bewertung_sterne.Value;
+
+            Bewertung bewertung = new Bewertung(
+                Kunde.getKundeFromID(Program.BENUTZER.BenutzerID),
+                (byte)sterne, 
+                kommentar,
+                true
+            );
+
+            bool alreadyBewertet = ((int)DatabaseManager.Database.GetData("SELECT COUNT(*) FROM kunde_bewertet_produkt WHERE benutzerID='"+Program.BENUTZER.BenutzerID+"' AND produktID='"+selectedProduct.ID+"'")[0][0]) > 0;
+
+            if (alreadyBewertet) {
+                MessageBox.Show("Sie haben dieses Produkt schon bewertet", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirmBewertung = MessageBox.Show("Wollen sie das Produkt wirklich mit " + sterne + " Sterne bewerten?", "Bewerten", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(confirmBewertung != DialogResult.Yes) {
+                MessageBox.Show("Bewertung abgebrochen", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if(selectedProduct != null) {
+                selectedProduct.Bewertungen.Add(bewertung);
+                DatabaseManager.Database.execute("INSERT INTO kunde_bewertet_produkt VALUES('" + Program.BENUTZER.BenutzerID + "','" + selectedProduct.ID + "'," + bewertung.Sterne + ",'" + bewertung.Kommentar + "'," + (bewertung.VerifizierterKauf ? 1 : 0) + ",'" + DateTime.Now.ToString() + "')");
+                MessageBox.Show("Bewertung abgeschickt", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tb_bewertung_sterne.Value = 1;
+                rtb_bewertung.Text = "Hier Kommentar einfügen.";
+
+            } else {
+                MessageBox.Show("Kein Produkt ausgewählt", "Bewerten fehlgeschlagen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

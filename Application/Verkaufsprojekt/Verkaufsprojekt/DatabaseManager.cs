@@ -30,8 +30,9 @@ namespace Verkaufsprojekt {
 				Command.CommandText = sql;
 				Command.ExecuteNonQuery();
 				Connection.Close();
-			} catch (Exception) {
-				MessageBox.Show("Ein Fehler ist unterlaufen", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			} catch (Exception e) {
+				Connection.Close();
+				MessageBox.Show("Ein Fehler ist unterlaufen\n"+e.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			}
 		}
 

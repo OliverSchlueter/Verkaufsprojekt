@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Verkaufsprojekt.Benutzer;
 
 namespace Verkaufsprojekt {
@@ -60,7 +61,17 @@ namespace Verkaufsprojekt {
             List<object[]> data = DatabaseManager.Database.GetData("SELECT * FROM produkt");
 
             foreach (object[] row in data) {
-                Produkt produkt = new Produkt((string)row[0], (string)row[1], null, (float)((double)row[2]), (string)row[3], Convert.ToDateTime(row[4]), null);
+                string pID = (string)row[0];
+                List<Bewertung> bewertungen = new List<Bewertung>();
+
+                List<object[]> bewertungenData = DatabaseManager.Database.GetData("SELECT * FROM kunde_bewertet_produkt WHERE produktID='" + pID + "'");
+
+                foreach (object[] bRow in bewertungenData) {
+                    Bewertung bewertung = new Bewertung(Kunde.getKundeFromID((string)bRow[0]), (byte)(Int16)bRow[2], (string)bRow[3], (Int16)bRow[4] == 1);
+                    bewertungen.Add(bewertung);
+                }
+
+                Produkt produkt = new Produkt(pID, (string)row[1], null, (float)((double)row[2]), (string)row[3], Convert.ToDateTime(row[4]), bewertungen);
                 PRODUKTE.Add(produkt);
             }
 

@@ -49,14 +49,17 @@ namespace Verkaufsprojekt.Formulare {
                     break;
                 }
 
-                Label l = new Label();
-                l.Width = lbl_produkt1.Width;
-                l.Height = lbl_produkt1.Height;
-                l.Name = "Produkt" + i;
                 string name = neueProdukteData[i - 1][0].ToString();
                 string preis = neueProdukteData[i - 1][1].ToString() + " €";
-                l.Text = name + " (" + preis + ")";
-                l.Location = new Point(lbl_produkt1.Location.X, lbl_produkt1.Location.Y + (lbl_produkt1.Height*(i-1)) + 5);
+
+                Label l = new Label {
+                    Width = lbl_produkt1.Width,
+                    Height = lbl_produkt1.Height,
+                    Name = "Produkt" + i,
+                    Text = name + " (" + preis + ")",
+                    Location = new Point(lbl_produkt1.Location.X, lbl_produkt1.Location.Y + (lbl_produkt1.Height * (i - 1)) + 5)
+                };
+
                 panel1.Controls.Add(l);
             }
 
@@ -71,14 +74,17 @@ namespace Verkaufsprojekt.Formulare {
                     break;
                 }
 
-                Label l = new Label();
-                l.Width = lbl_mg_1.Width;
-                l.Height = lbl_mg_1.Height;
-                l.Name = "Produkt" + i;
-                string name = Produkt.GetProduktFromID((string)meistGekaufteProdukteData[i-1][0]).Name;
+                string name = Produkt.GetProduktFromID((string)meistGekaufteProdukteData[i - 1][0]).Name;
                 int amount = (int)meistGekaufteProdukteData[i - 1][1];
-                l.Text = name + " (x" + amount + ")";
-                l.Location = new Point(lbl_mg_1.Location.X, lbl_mg_1.Location.Y + (lbl_mg_1.Height * (i - 1)) + 5);
+
+                Label l = new Label {
+                    Width = lbl_mg_1.Width,
+                    Height = lbl_mg_1.Height,
+                    Name = "Produkt" + i,
+                    Text = name + " (x" + amount + ")",
+                    Location = new Point(lbl_mg_1.Location.X, lbl_mg_1.Location.Y + (lbl_mg_1.Height * (i - 1)) + 5)
+                };
+
                 panel2.Controls.Add(l);
             }
 

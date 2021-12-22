@@ -67,7 +67,7 @@ namespace Verkaufsprojekt {
                 List<object[]> bewertungenData = DatabaseManager.Database.GetData("SELECT * FROM kunde_bewertet_produkt WHERE produktID='" + pID + "'");
 
                 foreach (object[] bRow in bewertungenData) {
-                    Bewertung bewertung = new Bewertung(Kunde.getKundeFromID((string)bRow[0]), (byte)(Int16)bRow[2], (string)bRow[3], (Int16)bRow[4] == 1);
+                    Bewertung bewertung = new Bewertung(new Kunde((string)bRow[0], (string)bRow[0], null, null, null, DateTime.Now, DateTime.Now, null, 0.0f, null, null, null), (byte)(Int16)bRow[2], (string)bRow[3], (Int16)bRow[4] == 1);
                     bewertungen.Add(bewertung);
                 }
 

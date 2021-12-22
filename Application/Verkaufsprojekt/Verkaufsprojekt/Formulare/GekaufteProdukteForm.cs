@@ -68,6 +68,8 @@ namespace Verkaufsprojekt.Formulare {
             lbl_datum.Text = produkt.Veröffenetlichungsdatum.ToShortDateString();
             rtb_beschreibung.Text = produkt.Beschreibung;
 
+            dgv_bewertungen.Rows.Clear();
+
             foreach(Bewertung bewertung in produkt.Bewertungen) {
                 dgv_bewertungen.Rows.Add(bewertung.Kunde.BenutzerID, bewertung.Sterne, bewertung.Kommentar);
             }
@@ -101,6 +103,7 @@ namespace Verkaufsprojekt.Formulare {
             if(selectedProduct != null) {
                 selectedProduct.Bewertungen.Add(bewertung);
                 DatabaseManager.Database.execute("INSERT INTO kunde_bewertet_produkt VALUES('" + Program.BENUTZER.BenutzerID + "','" + selectedProduct.ID + "'," + bewertung.Sterne + ",'" + bewertung.Kommentar + "'," + (bewertung.VerifizierterKauf ? 1 : 0) + ",'" + DateTime.Now.ToString() + "')");
+                refreshCurrentSelected(selectedProduct.ID);
                 MessageBox.Show("Bewertung abgeschickt", "Bewertung", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tb_bewertung_sterne.Value = 1;
                 rtb_bewertung.Text = "Hier Kommentar einfügen.";
@@ -108,6 +111,13 @@ namespace Verkaufsprojekt.Formulare {
             } else {
                 MessageBox.Show("Kein Produkt ausgewählt", "Bewerten fehlgeschlagen", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void GekaufteProdukteForm_Paint(object sender, PaintEventArgs e) {
+            Graphics g = e.Graphics;
+
+            g.DrawLine(new Pen(Color.Black), dgv_produkte.Location.X + dgv_produkte.Width + + 20, 0, dgv_produkte.Location.X + dgv_produkte.Width + 20, Height);
+
         }
     }
 }

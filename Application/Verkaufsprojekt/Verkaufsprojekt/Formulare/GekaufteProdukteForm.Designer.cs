@@ -200,26 +200,26 @@ namespace Verkaufsprojekt.Formulare {
             // tb_bewertung_sterne
             // 
             this.tb_bewertung_sterne.LargeChange = 2;
-            this.tb_bewertung_sterne.Location = new System.Drawing.Point(275, 739);
+            this.tb_bewertung_sterne.Location = new System.Drawing.Point(1071, 511);
             this.tb_bewertung_sterne.Maximum = 5;
             this.tb_bewertung_sterne.Minimum = 1;
             this.tb_bewertung_sterne.Name = "tb_bewertung_sterne";
-            this.tb_bewertung_sterne.Size = new System.Drawing.Size(224, 69);
+            this.tb_bewertung_sterne.Size = new System.Drawing.Size(308, 69);
             this.tb_bewertung_sterne.TabIndex = 24;
             this.tb_bewertung_sterne.Value = 1;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(13, 739);
+            this.label6.Location = new System.Drawing.Point(1066, 418);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(224, 42);
+            this.label6.Size = new System.Drawing.Size(231, 42);
             this.label6.TabIndex = 25;
             this.label6.Text = "Bewertung abgeben:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(283, 774);
+            this.label7.Location = new System.Drawing.Point(1079, 546);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(27, 34);
             this.label7.TabIndex = 26;
@@ -228,7 +228,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(470, 774);
+            this.label8.Location = new System.Drawing.Point(1350, 548);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 34);
             this.label8.TabIndex = 27;
@@ -239,18 +239,19 @@ namespace Verkaufsprojekt.Formulare {
             // 
             this.rtb_bewertung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtb_bewertung.DetectUrls = false;
-            this.rtb_bewertung.Location = new System.Drawing.Point(13, 811);
+            this.rtb_bewertung.Location = new System.Drawing.Point(1420, 414);
             this.rtb_bewertung.Name = "rtb_bewertung";
-            this.rtb_bewertung.Size = new System.Drawing.Size(486, 174);
+            this.rtb_bewertung.Size = new System.Drawing.Size(669, 315);
             this.rtb_bewertung.TabIndex = 28;
             this.rtb_bewertung.Text = "Hier Kommentar einfügen.";
             // 
             // btn_bewerten
             // 
+            this.btn_bewerten.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_bewerten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_bewerten.Location = new System.Drawing.Point(516, 811);
+            this.btn_bewerten.Location = new System.Drawing.Point(1084, 599);
             this.btn_bewerten.Name = "btn_bewerten";
-            this.btn_bewerten.Size = new System.Drawing.Size(137, 82);
+            this.btn_bewerten.Size = new System.Drawing.Size(295, 57);
             this.btn_bewerten.TabIndex = 29;
             this.btn_bewerten.Text = "Bewerten";
             this.btn_bewerten.UseVisualStyleBackColor = true;
@@ -269,19 +270,19 @@ namespace Verkaufsprojekt.Formulare {
             this.Column5,
             this.Column6});
             this.dgv_bewertungen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dgv_bewertungen.Location = new System.Drawing.Point(1083, 669);
+            this.dgv_bewertungen.Location = new System.Drawing.Point(1071, 86);
             this.dgv_bewertungen.MultiSelect = false;
             this.dgv_bewertungen.Name = "dgv_bewertungen";
             this.dgv_bewertungen.ReadOnly = true;
             this.dgv_bewertungen.RowHeadersWidth = 62;
             this.dgv_bewertungen.RowTemplate.Height = 28;
             this.dgv_bewertungen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_bewertungen.Size = new System.Drawing.Size(1034, 320);
+            this.dgv_bewertungen.Size = new System.Drawing.Size(1034, 309);
             this.dgv_bewertungen.TabIndex = 30;
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(1078, 624);
+            this.label9.Location = new System.Drawing.Point(1066, 41);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(159, 42);
             this.label9.TabIndex = 31;
@@ -290,7 +291,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // Column4
             // 
-            this.Column4.FillWeight = 60F;
+            this.Column4.FillWeight = 20F;
             this.Column4.HeaderText = "Benutzer";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
@@ -298,7 +299,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // Column5
             // 
-            this.Column5.FillWeight = 30F;
+            this.Column5.FillWeight = 14F;
             this.Column5.HeaderText = "Sterne";
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
@@ -315,7 +316,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2129, 1001);
+            this.ClientSize = new System.Drawing.Size(2129, 747);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dgv_bewertungen);
             this.Controls.Add(this.btn_bewerten);
@@ -339,6 +340,7 @@ namespace Verkaufsprojekt.Formulare {
             this.Text = "Gekaufte Produkte";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GekaufteProdukteForm_FormClosing);
             this.Load += new System.EventHandler(this.GekaufteProdukteForm_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.GekaufteProdukteForm_Paint);
             this.Controls.SetChildIndex(this.dgv_produkte, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
@@ -389,9 +391,9 @@ namespace Verkaufsprojekt.Formulare {
         private System.Windows.Forms.RichTextBox rtb_bewertung;
         private System.Windows.Forms.Button btn_bewerten;
         private System.Windows.Forms.DataGridView dgv_bewertungen;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Label label9;
     }
 }

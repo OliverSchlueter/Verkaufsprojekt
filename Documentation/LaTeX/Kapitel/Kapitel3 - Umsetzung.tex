@@ -1,0 +1,244 @@
+\chapter{Umsetzung}
+
+In diesen Kapitel werden alle Klassen mit ihren Attributen von Methoden/Funktionen beschrieben.
+
+\section{Program.cs}
+In dieser Klasse wird das Programm gestartet. Außerdem enthält sie Informationen über die Version des Programms. Um immer wieder zurück zur Startseite zu gelangen befindet sich in der Program.cs Klasse das statische StartseiteForm Objekt, wobei hier das Singleton Entwurfsmuster angewandt wird, d.h. es soll nur eine Instanz der Klasse StartseiteForm existieren. Ebenfalls enthält sie Informationen über den gerade angemeldeten Benutzer (ebenfalls mit den Singleton Entwurfsmustern angewandt).
+
+\section{Benutzer.cs}
+
+Diese Klasse speichert alle Informationen über einen Benutzer.\\
+\\
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{8cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & List<Benutzer> & BENUTZER & Liste alle registrierten Benutzer in der Datenbank\\
+\hline
+public & string & BenutzerID & Eindeutige ID, immer 5 Zeichen lang\\
+\hline
+public & string & Vorname & Vorname des Benutzers\\
+\hline
+public & string & Vorname & Nachname des Benutzers\\
+\hline
+public & string & Nickname & Nickname des Benutzers\\
+\hline
+public & string & Email & Email-Adresse des Benutzers\\
+\hline
+public & DateTime & Geburtsdatum & Geburtsdatum des Benutzers\\
+\hline
+public & DateTime & Erstelldatum & Erstelldatum, wann der Benutzer erstellt wurde\\
+\hline
+public & string & Passwort & Passwort des Benutzers (mindestens 8 Zeichen lang)\\
+\end{tabular}
+
+\newpage
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|l|p{7cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & string & GenerateNewBenutzerID() & Generiert eine nicht schon vorhandene neue Benutzer ID\\
+\hline
+public static & Benutzer & getBenutzerFromID(string id) & Gibt das Benutzer Objekt mit der zugehörigen ID zurück. Null wenn nicht gefunden\\
+\hline
+public static & Benutzer & LoadFromDB() & Lädt alle Benutzer von der Datenbank in die BENUTZER-Liste\\
+\end{tabular}
+
+
+\subsection{Kunde.cs}
+Kunde.cs ist eine Klasse, welche von Benutzer.cs erbt.\\
+\\
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{8cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & List<Kunde> & KUNDEN & Liste alle registrierten Kunden in der Datenbank\\
+\hline
+public & float & Guthaben & Guthaben des Kunden\\
+\hline
+public & List<Produkt> & GekaufteProdukte & Liste der bereits gekauften Produkte\\
+\hline
+public & List<Produkt> & Beobachtungsliste & Liste der Produkte, welche der Kunde beobachtet\\
+\hline
+public & List<Produkt> & Wunschliste & Liste der Produkte, welche der Kunde sich wünscht\\
+\end{tabular}\newline \break
+
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|p{6cm}|p{6cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public & bool & produktKaufen(Produkt produkt) & Zieht Guthaben ab und weist das Produkt den Kunde zu\\
+\hline
+public & bool & produktWuenschen(Produkt produkt) & Fügt das Produkt in die Wunschliste hinzu\\
+\hline
+public & bool & produktBeobachten(Produkt produkt) & Fügt das Produkt in der Beobachtungsliste hinzu\\
+\hline
+public & bool & produktBewerten(Produkt produkt, byte sterne, string kommentar) & Fügt eine Bewertung zum Produkt zu\\
+\hline
+public static & Benutzer & geKundeFromID(string id) & Gibt das Kunden Objekt mit der zugehörigen ID zurück. Null wenn nicht gefunden\\
+\hline
+public static & Benutzer & LoadFromDB() & Lädt alle Kunden von der Datenbank in die KUNDEN-Liste\\
+\end{tabular}
+
+\newpage
+
+\subsection{Autor.cs}
+Autor.cs ist eine Klasse, welche von Benutzer.cs erbt.\\
+\\
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{5.3cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & List<Autor> & AUTOREN & Liste alle registrierten Autoren in der Datenbank\\
+\hline
+public & Entwicklerstatus & Entwicklerstatus & Beschreibt den Entwicklerstatus des Autors\\
+\hline
+public & List<Programmiersprache> & Programmiersprachen & Liste der Programmiersprachen, welche der Autor beherrscht\\
+\hline
+public & List<Produkt> & Beobachtungsliste & Liste der Produkte, welche der Kunde beobachtet\\
+\hline
+public & List<Produkt> & Wunschliste & Liste der Produkte, welche der Kunde sich wünscht\\
+\end{tabular}\newline \break
+
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|p{6cm}|p{6cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & Benutzer & LoadFromDB() & Lädt alle Autoren von der Datenbank in die AUTOREN-Liste\\
+\end{tabular}
+
+
+\subsection{Mitarbeiter.cs}
+Mitarbeiter.cs ist eine Klasse, welche von Benutzer.cs erbt.\\
+\\
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{8cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & List<Mitarbeiter> & MITARBEITER & Liste alle registrierten Mitarbeiter in der Datenbank\\
+\hline
+public & Aufgabenbereich & Aufgabenbereich & Gibt den Aufgabenbereich des Mitarbeiters an\\
+\end{tabular}\newline \break
+
+\newpage
+
+\section{Produkt.cs}
+In dieser Klasse werden Informationen über ein Produkt gespeichert.\\
+\\
+
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{6.3cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & List<Produkt> & PRODUKTE & Liste alle registrierten Produkte in der Datenbank\\
+\hline
+public & string & ID & Eindeutige ID\\
+\hline
+public & string & Name & Name des Produkts\\
+\hline
+public & List<Autor> & Autoren & Liste aller Autoren, welche das Produkt geschrieben haben\\
+\hline
+public & float & Preis & Preis des Produkts (0 wenn es kostenfrei ist)\\
+\hline
+public & string & Beschreibung & Ausführliche Beschreibung des Produkts\\
+\hline
+public & DateTime & Veröffentlichungsdatum & Datum der Veröffentlichung des Produkts\\
+\hline
+public & List<Bewertung> & Bewertungen & Liste aller Bewertungen von Kunden\\
+\end{tabular}\\\\
+
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|l|p{7cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & Benutzer & getProduktFromID(string id) & Gibt das Produkt Objekt mit der zugehörigen ID zurück. Null wenn nicht gefunden\\
+\hline
+public static & Benutzer & LoadFromDB() & Lädt alle Produkte von der Datenbank in die PRODUKTE-Liste\\
+\end{tabular}\\\\
+
+\section{Bewertung.cs}
+In dieser Klasse werden Informationen über eine Bewertung gespeichert.\\
+\\
+
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{8cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public & Kunde & Kunde & Kunde, welcher die Bewertung abgegeben hat\\
+\hline
+public & byte & Sterne & Anzahl der gegebene Sterne (1-5)\\
+\hline
+public & string & Kommentar & Kommentar zum Produkt\\
+\hline
+public & boolean & VerifizierterKauf & Ob das Produkt gekauft wurde oder nicht\\
+\end{tabular}
+
+\newpage
+
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|l|p{7cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & Benutzer & getProduktFromID(string id) & Gibt das Produkt Objekt mit der zugehörigen ID zurück. Null wenn nicht gefunden\\
+\hline
+public static & Benutzer & LoadFromDB() & Lädt alle Produkte von der Datenbank in die PRODUKTE-Liste\\
+\end{tabular}\\\\
+
+\section{DatabaseManager.cs}
+Dies ist eine Hilfsklasse, welche den Zugriff zur Datenbank vereinfacht.\\
+\\
+
+Attribute:\\
+
+\begin{tabular}[h]{l|l|l|p{7cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & DatebaseManager & Database & Globales Database Objekt\\
+\hline
+private & string & ConnectionString & Connection-String, welcher zur Verbindung benötigt wird\\
+\hline
+public & OleDbConnection & Connection & Verbindungs-Objekt zur Datenbank\\
+\hline
+public & OleDbCommand & Command & Command-Objekt zur Ausführung von Befehlen\\
+\hline
+public & OleDbDataReader & Reader & Reader-Objekt zur Auslesung von Resultaten\\
+\end{tabular}
+
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|l|p{5cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public & void & execute(string sql) & Führt ein Befehl aus. Geeignet für INSERT-Befehle\\
+\hline
+public & OleDbDataReader & Read(string sql) &  Führt ein Befehl aus und gibt den Reader zurück\\
+\hline
+public & void & CloseReaderAndConnection() & Schließt die Verbindung zum Reader und zur Connetion\\
+\hline
+public & List<object[]> & GetData(string sql) & Führt ein Befehl aus und liefert eine Liste (Reihen) mit Arrays (Spalten) von Daten\\
+\hline
+private static & void & example() & Beispiel, nicht benutzen\\
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,22 +5,31 @@ Meine Idee war es eine Anwendung zu erschaffen, wo Software-Produkte angeboten w
 Auch sollen Kunden die Möglichkeit bekommen Produkte und Autoren zu bewerten und ein Kommentar zu hinterlegen. Da dabei auch viel Unsinn bei auftreten könnte, brauch man Mitarbeiter, welche anstößige Kommentare blockieren und ggf. den Benutzer sperren können. Wenn es schon Mitarbeiter gibt, kann man auch eine einführen, dass sie Produkte unter die Lupe nehmen können, d.h. dass es sie den Anforderungen entsprechen und keine Schadsoftware enthalten.
 
 \section{Spezifikation}
-Um spezieller zu werden habe ich mir folgende Eigenschaften der Bestandteile erarbeitet, welche auch den Grundstein des UML-Diagramms sein soll.\\
-\\
-Jedes Produkt soll eine eindeutige ID haben, welche fünf Zeichen lang ist, außerdem einen Name und eine ausführliche Beschreibung. Fehlen dürfen nicht die Autoren, welche die Software geschrieben haben. Produkte können umsonst angeboten werden, allerdings ist in der Regel ein Festpreis festgelegt. Kunden, welche ein Produkt gekauft haben, können dieses Bewerten (1-5 Sterne, wobei 5 Sterne besonders gut ist) und kommentieren und ihre Bewertung dadurch begründen.\\
-\\
+Um spezieller zu werden habe ich mir folgende Eigenschaften der Bestandteile erarbeitet, welche auch den Grundstein des UML-Diagramms sein soll.
+
+\subsection{Produkte}
+Jedes Produkt soll eine eindeutige ID haben, welche fünf Zeichen lang ist, außerdem einen Name und eine ausführliche Beschreibung. Fehlen dürfen nicht die Autoren, welche die Software geschrieben haben. Produkte können umsonst angeboten werden, allerdings ist in der Regel ein Festpreis festgelegt. Kunden, welche ein Produkt gekauft haben, können dieses Bewerten (1-5 Sterne, wobei 5 Sterne besonders gut ist) und kommentieren und ihre Bewertung dadurch begründen.
+
+\subsection{Benutzer}
 Es gibt drei Arten von Benutzer: Kunden, Autoren und Mitarbeiter. Sie alle besitzen eine eindeutige ID, welche fünf Zeichen lang ist, einen Vor- und Nachname, eine Email-Adresse, ihr Geburtsdatum, das Erstelldatum des Kontos und ein Passwort.\\
 Zusätzlich werden Autoren mit einen Entwicklerstatus versehen, welches angibt, wie Erfahren und ggf. professionell sie sind. Auch können sie aus angeben, mit welchen Programmier- und Skriptsprachen sie ihre Software erzeugen.\\
 Kunden haben eine Liste von bereits gekauften Produkten und Produkten, welche sie beobachten und sich ggf. in Zukunft kaufen wollen. Die Anwendung basiert auf das Prepaid-Prinzip, sodass jeder Kunde ein Guthaben haben, welches man jederzeit aufladen kann.\\
-Jeder Mitarbeiter werden ein oder mehrere Aufgabenbereiche zugeteilt, wofür sie Zuständig sind und eine Liste von Produkten, welche sie zurzeit Prüfen.\\
-\\
-Nun noch die Formulare. Beim Start der Anwendung landet man auf der Startseite, wo man die Möglichkeit hat sich anzumelden, sich zu registrieren, sich abzumelden. Falls man angemeldet ist, hat man die Möglichkeit zu einen weiteren Formular zu wechseln, wo man alle Produkte sieht und mit ihnen weiter interagieren kann. Auch kann man sich seine bereits gekauften Produkte in einen weiteren Formular anzeigen lassen. Betrachten wir jedoch diese Formular genauer.\\
-\\
-Login Formular:\\
-\\
-Registrations Formular:\\
-\\
-Produkt Formular:\\
-\\
-Gekaufte Produkte Formular:\\
-\\
+Jeder Mitarbeiter werden ein oder mehrere Aufgabenbereiche zugeteilt, wofür sie Zuständig sind und eine Liste von Produkten, welche sie zurzeit Prüfen.
+
+\subsection{Formulare}
+Nun noch die Formulare. Beim Start der Anwendung landet man auf der Startseite, wo man die Möglichkeit hat sich anzumelden, sich zu registrieren, sich abzumelden. Falls man angemeldet ist, hat man die Möglichkeit zu einen weiteren Formular zu wechseln, wo man alle Produkte sieht und mit ihnen weiter interagieren kann. Auch kann man sich seine bereits gekauften Produkte in einen weiteren Formular anzeigen lassen. Betrachten wir jedoch diese Formular genauer.
+
+\subsubsection{Login Formular}
+In diesen Formular hat man die Möglichkeit seine Benutzer ID und sein Passwort einzugeben und sich einzuloggen. Das angegebene Passwort muss mit den Passwort der Benutzer ID übereinstimmen.
+
+\subsubsection{Registrations Formular}
+Hier kann man sich einen Kunden-Account anlegen, indem man seinen Vorname, Nachname, Email, Nickname, Geburtsdatum und Passwort angibt. Die Email muss eine existierende Email-Adresse sein und das Passwort muss einigen Vorschriften befolgen (z. B. mindestens 8 Zeichen lang).
+
+\subsubsection{Produkte Formular}
+In diesen Formular erhält man eine Liste von allen Produkten. Wenn man auf ein Produkt kickt, erscheint im unteren Bereiche eine genauere Beschreibung und die Möglichkeit es zu kaufen.
+
+\subsubsection{Gekaufte Produkte Formular}
+Eine Liste von allen bereits gekauften Produkten kann man hier sehen. Man kann die einzelne Produkte wie beim Produkte Formular anklicken um eine genauere Beschreibung zu bekommen. Außerdem befindet sich auf der rechten Seite eine Liste von allen Bewertungen zu den ausgewählten Produkt. Unter diese Liste kann man ebenfalls eine Bewertung abgeben.
+
+\subsubsection{Einstellungsformular}
+In diesen Formular sieht man alle seine Daten (Benutzer ID, Vorname, Nachname, Email, Nickname, Geburtsdatum und Passwort). Man kann einige davon ändern und diese Änderungen dann über einen Knopf übernehmen oder zurücksetzen.

@@ -1,0 +1,169 @@
+.headline{
+    text-align: center;
+}
+
+#searchProductForm{
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    display: table;
+}
+
+#searchProduct{
+    background-color: rgb(56, 56, 56);
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: var(--font-size);
+    padding: 10px 15px;
+    outline: none;
+    text-align: center;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .2s ease-in-out;
+}
+
+#searchProduct:focus{
+    border-radius: 20px;
+}
+
+.products{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product{
+    width: 415px;
+    max-width: 415px;
+    min-width: 415px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .2s ease-in-out;
+    background-color: rgb(24, 24, 24);
+}
+
+.product:hover{
+    box-shadow: rgba(54, 232, 255, 0.671) 0px 0px 18px;
+}
+
+.product p{
+    margin: 10px;
+}
+
+.product .name{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: aqua;
+}
+
+.product .id{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.product .price{
+    color: rgba(73, 255, 255, 0.678);
+}
+
+.product .viewBtn{
+    margin-left: auto;
+    background-color: rgb(56, 56, 56);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: var(--font-size);
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all .2s ease-in-out;
+    height: 43px;
+}
+
+.product .viewBtn:hover{
+    border-radius: 10px;
+}
+
+#viewDialog #name{
+    font-size: 30px;
+    font-weight: bold;
+    color: aqua;
+    margin: 0 ;
+}
+
+#viewDialog #information{
+    display: flex;
+}
+
+
+#viewDialog p{
+    padding: 5px 10px;
+}
+
+#viewDialog #id{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#viewDialog #price{
+    color: rgba(73, 255, 255, 0.678);
+}
+
+#viewDialog #description{
+    text-align: justify;
+}
+
+#viewDialog #autors{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#viewDialog #autors #autoren{
+    margin: 0;
+}
+
+#viewDialog #autors .autor{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: 15px;
+    /* background-color: rgb(24, 24, 24); */
+    background-color: rgb(10, 115, 119);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#viewDialog .descriptonContainer{
+    overflow-y: auto;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+#viewDialog .buyBtn{
+    margin-left: auto;
+    background-color: rgb(56, 56, 56);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: var(--font-size);
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: border-radius .2s ease-in-out;
+    transition: color .5s ease-in-out;
+}
+
+
+#viewDialog .buyBtn:hover{
+    border-radius: 10px;
+    color: rgb(127, 253, 179);
+}
+
+#viewDialog #information p{
+    margin-bottom: 10px;
+}

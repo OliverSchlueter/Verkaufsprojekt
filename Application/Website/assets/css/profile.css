@@ -1,0 +1,122 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#logoutBtn{
+    position: fixed;
+    background-color: rgb(102, 12, 12);
+    border-radius: 10px;
+    color: rgb(255, 112, 112);
+    border: none;
+    font-family: var(--font-family);
+    font-size: 30px;
+    padding: 10px;
+    top: 92%;
+    left: 93%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#logoutBtn:hover{
+    box-shadow: rgba(255, 54, 54, 0.671) 0px 0px 18px;
+}
+
+.card{
+    height: fit-content;
+    max-width: 40%;
+    max-height: 30%;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin: 20px;
+}
+
+.card .headline{
+    font-weight: bold;
+    color: aqua;
+}
+
+
+#profile .value{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--font-color);
+}
+
+.card table{
+    border-collapse: collapse;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+}
+
+.card tr, th, td{
+    border: 1px rgb(122, 122, 122) solid;
+    padding: 5px;
+}
+
+.card td{
+    padding: 5px 10px;
+}
+
+.card .id{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#createProduct form{
+    width: 400px;
+}
+
+#createProduct input, textarea{
+    background-color: rgb(41, 41, 41);
+    border: none;
+    border-radius: 10px;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#createProduct textarea{
+    resize: vertical;
+    height: 200px;
+    min-height: 200px;
+}
+
+#createProduct .label{
+    color: aqua;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#createProduct #cpSubmit{
+    margin-top: 20px;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: rgb(41, 41, 41);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#createProduct #cpSubmit:hover{
+    box-shadow: rgba(54, 255, 71, 0.671) 0px 0px 18px;
+    color: lightgreen;
+}
+
+#writtenProducts .delImg{
+    filter: invert(44%) sepia(27%) saturate(1750%) hue-rotate(318deg) brightness(93%) contrast(92%);
+    cursor: pointer;
+}
+
+#boughtProducts .downloadImg{
+    filter: invert(73%) sepia(51%) saturate(634%) hue-rotate(70deg) brightness(98%) contrast(86%);
+    cursor: pointer;
+}

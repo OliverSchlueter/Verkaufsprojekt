@@ -1,0 +1,68 @@
+main{
+    margin-top: 15%;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+}
+
+.inputFields{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+input{
+    border: 1px rgb(50, 50, 50) solid;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: var(--font-color);
+    color: var(--font-color);
+    margin-bottom: 30px;
+    outline: none;
+    transition: border-radius .2s ease-in-out;
+}
+
+input:hover{
+    border-radius: 10px;
+}
+
+
+label{
+    margin-left: 20px;
+    color: aqua;
+}
+
+.inputField{
+    display: block;
+    margin: 10px;
+}
+
+button{
+    background-color: transparent;
+    border: 1px rgb(50, 50, 50) solid;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: var(--font-color);
+    color: rgb(20, 189, 20);
+    cursor: pointer;
+    width: 15%;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    border-width: 0px;
+    border-radius: 20px;
+    color: rgb(34, 228, 34);
+    box-shadow: rgba(71, 255, 54, 0.671) 0px 0px 18px;
+}

@@ -99,6 +99,7 @@
     <Compile Include="Formulare\StartseiteForm.Designer.cs">
       <DependentUpon>StartseiteForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hasher.cs" />
     <Compile Include="Produkt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Programmiersprache.cs" />

@@ -40,10 +40,13 @@ namespace Verkaufsprojekt.Formulare {
             this.tb_id = new System.Windows.Forms.TextBox();
             this.btn_aendern = new System.Windows.Forms.Button();
             this.btn_zuruecksetzen = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_guthaben = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label6
             // 
+            this.label6.ForeColor = System.Drawing.Color.Teal;
             this.label6.Location = new System.Drawing.Point(356, 311);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 28);
@@ -55,6 +58,7 @@ namespace Verkaufsprojekt.Formulare {
             this.tb_passwort.Location = new System.Drawing.Point(361, 342);
             this.tb_passwort.MaxLength = 255;
             this.tb_passwort.Name = "tb_passwort";
+            this.tb_passwort.PasswordChar = '*';
             this.tb_passwort.Size = new System.Drawing.Size(325, 37);
             this.tb_passwort.TabIndex = 27;
             this.tb_passwort.TextChanged += new System.EventHandler(this.tb_dtp_valueChanged);
@@ -70,6 +74,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label5
             // 
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(11, 309);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(191, 28);
@@ -78,6 +83,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label4
             // 
+            this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(11, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 28);
@@ -95,6 +101,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label3
             // 
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(356, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 28);
@@ -112,6 +119,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label2
             // 
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(356, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 28);
@@ -129,6 +137,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label1
             // 
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(11, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 28);
@@ -146,6 +155,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label7
             // 
+            this.label7.ForeColor = System.Drawing.Color.Teal;
             this.label7.Location = new System.Drawing.Point(11, 50);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 28);
@@ -157,36 +167,61 @@ namespace Verkaufsprojekt.Formulare {
             this.tb_id.Location = new System.Drawing.Point(16, 81);
             this.tb_id.MaxLength = 5;
             this.tb_id.Name = "tb_id";
+            this.tb_id.ReadOnly = true;
             this.tb_id.Size = new System.Drawing.Size(149, 37);
             this.tb_id.TabIndex = 29;
             this.tb_id.TextChanged += new System.EventHandler(this.tb_dtp_valueChanged);
             // 
             // btn_aendern
             // 
+            this.btn_aendern.BackColor = System.Drawing.Color.Aqua;
             this.btn_aendern.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_aendern.ForeColor = System.Drawing.Color.Teal;
             this.btn_aendern.Location = new System.Drawing.Point(16, 415);
             this.btn_aendern.Name = "btn_aendern";
             this.btn_aendern.Size = new System.Drawing.Size(292, 44);
             this.btn_aendern.TabIndex = 31;
             this.btn_aendern.Text = "Änderungen übernehmen";
-            this.btn_aendern.UseVisualStyleBackColor = true;
+            this.btn_aendern.UseVisualStyleBackColor = false;
             this.btn_aendern.Click += new System.EventHandler(this.btn_aendern_Click);
             // 
             // btn_zuruecksetzen
             // 
+            this.btn_zuruecksetzen.BackColor = System.Drawing.Color.Aqua;
             this.btn_zuruecksetzen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_zuruecksetzen.ForeColor = System.Drawing.Color.Teal;
             this.btn_zuruecksetzen.Location = new System.Drawing.Point(394, 415);
             this.btn_zuruecksetzen.Name = "btn_zuruecksetzen";
             this.btn_zuruecksetzen.Size = new System.Drawing.Size(292, 44);
             this.btn_zuruecksetzen.TabIndex = 32;
             this.btn_zuruecksetzen.Text = "Zurücksetzen";
-            this.btn_zuruecksetzen.UseVisualStyleBackColor = true;
+            this.btn_zuruecksetzen.UseVisualStyleBackColor = false;
             this.btn_zuruecksetzen.Click += new System.EventHandler(this.btn_zuruecksetzen_Click);
+            // 
+            // label8
+            // 
+            this.label8.ForeColor = System.Drawing.Color.Teal;
+            this.label8.Location = new System.Drawing.Point(532, 50);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(154, 28);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Guthaben:";
+            // 
+            // tb_guthaben
+            // 
+            this.tb_guthaben.Location = new System.Drawing.Point(537, 81);
+            this.tb_guthaben.MaxLength = 5;
+            this.tb_guthaben.Name = "tb_guthaben";
+            this.tb_guthaben.ReadOnly = true;
+            this.tb_guthaben.Size = new System.Drawing.Size(149, 37);
+            this.tb_guthaben.TabIndex = 33;
             // 
             // EinstellungForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(709, 484);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.tb_guthaben);
             this.Controls.Add(this.btn_zuruecksetzen);
             this.Controls.Add(this.btn_aendern);
             this.Controls.Add(this.label7);
@@ -222,6 +257,8 @@ namespace Verkaufsprojekt.Formulare {
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.btn_aendern, 0);
             this.Controls.SetChildIndex(this.btn_zuruecksetzen, 0);
+            this.Controls.SetChildIndex(this.tb_guthaben, 0);
+            this.Controls.SetChildIndex(this.label8, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +282,7 @@ namespace Verkaufsprojekt.Formulare {
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Button btn_aendern;
         private System.Windows.Forms.Button btn_zuruecksetzen;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tb_guthaben;
     }
 }

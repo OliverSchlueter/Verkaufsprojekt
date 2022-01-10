@@ -40,7 +40,6 @@ namespace Verkaufsprojekt.Formulare {
             // menuStrip
             // 
             this.menuStrip.Font = new System.Drawing.Font("Malgun Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsm_geheZu,
@@ -98,28 +97,28 @@ namespace Verkaufsprojekt.Formulare {
             // tsm_profil_login
             // 
             this.tsm_profil_login.Name = "tsm_profil_login";
-            this.tsm_profil_login.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_login.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_login.Text = "Login";
             this.tsm_profil_login.Click += new System.EventHandler(this.tsm_profil_login_Click);
             // 
             // tsm_profil_registieren
             // 
             this.tsm_profil_registieren.Name = "tsm_profil_registieren";
-            this.tsm_profil_registieren.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_registieren.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_registieren.Text = "Registieren";
             this.tsm_profil_registieren.Click += new System.EventHandler(this.tsm_profil_registieren_Click);
             // 
             // tsm_profil_logout
             // 
             this.tsm_profil_logout.Name = "tsm_profil_logout";
-            this.tsm_profil_logout.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_logout.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_logout.Text = "Logout";
             this.tsm_profil_logout.Click += new System.EventHandler(this.tsm_profil_logout_Click);
             // 
             // tsm_profil_einstellungen
             // 
             this.tsm_profil_einstellungen.Name = "tsm_profil_einstellungen";
-            this.tsm_profil_einstellungen.Size = new System.Drawing.Size(270, 38);
+            this.tsm_profil_einstellungen.Size = new System.Drawing.Size(249, 38);
             this.tsm_profil_einstellungen.Text = "Einstellungen";
             this.tsm_profil_einstellungen.Click += new System.EventHandler(this.tsm_profil_einstellungen_Click);
             // 

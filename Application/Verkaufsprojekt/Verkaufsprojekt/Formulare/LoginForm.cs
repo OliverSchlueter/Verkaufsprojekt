@@ -57,7 +57,7 @@ namespace Verkaufsprojekt.Formulare {
 
             foreach(Benutzer.Benutzer benutzer in Benutzer.Benutzer.BENUTZER) {
                 if (benutzer.BenutzerID.Equals(benutzerID)) {
-                    if (benutzer.Passwort.Equals(passwort)) { // TODO: add hash password support
+                    if (benutzer.Passwort.Equals(Hasher.hashPassword(benutzer.BenutzerID, passwort))) {
                         Program.BENUTZER = benutzer;
                         login = true;
                         Console.WriteLine("Login als " + benutzer.Vorname + " " + benutzer.Nachname + " - " + benutzer.BenutzerID);

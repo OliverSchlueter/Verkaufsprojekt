@@ -31,6 +31,7 @@ namespace Verkaufsprojekt.Formulare {
             tb_nickname.Text = Program.BENUTZER.Nickname;
             tb_email.Text = Program.BENUTZER.Email;
             dtp_geburtsdatum.Value = Program.BENUTZER.Geburtsdatum;
+            tb_guthaben.Text = Benutzer.Kunde.getKundeFromID(Program.BENUTZER.BenutzerID).Guthaben + " €";
         }
         
         private void btn_aendern_Click(object sender, EventArgs e) {
@@ -81,7 +82,7 @@ namespace Verkaufsprojekt.Formulare {
                 "nickname='" + nickname + "', " +
                 "email='" + email + "', " +
                 "geburtsdatum='" + geburtsdatum + "', " +
-                "passwort='" + passwort + "' " +
+                "passwort='" + Hasher.hashPassword(id, passwort) + "' " +
                 "WHERE benutzerID='" + Program.BENUTZER.BenutzerID + "'");
 
             MessageBox.Show("Erfolgreich Daten geändert", "Änderung", MessageBoxButtons.OK, MessageBoxIcon.Information);

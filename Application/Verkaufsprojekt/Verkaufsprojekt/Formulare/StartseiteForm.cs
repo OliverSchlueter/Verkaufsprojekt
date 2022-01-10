@@ -66,9 +66,9 @@ namespace Verkaufsprojekt.Formulare {
             List<object[]> meistGekaufteProdukteData = DatabaseManager.Database.GetData(
                 "SELECT produktID, COUNT(*) FROM kunde_kauft_produkt GROUP BY produktID ORDER BY COUNT(*) DESC"
                 );
-
-            lbl_mg_1.Text = Produkt.GetProduktFromID((string)meistGekaufteProdukteData[0][0]).Name + " (x" + meistGekaufteProdukteData[0][1] + ")";
-
+            if (meistGekaufteProdukteData.Count > 0) {
+                lbl_mg_1.Text = Produkt.GetProduktFromID((string)meistGekaufteProdukteData[0][0]).Name + " (x" + meistGekaufteProdukteData[0][1] + ")";
+            }
             for (int i = 2; i <= 5; i++) {
                 if (meistGekaufteProdukteData.Count < i) {
                     break;

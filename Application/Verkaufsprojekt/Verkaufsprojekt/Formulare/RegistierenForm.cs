@@ -58,15 +58,16 @@ namespace Verkaufsprojekt.Formulare {
                 return;
             }
 
+            string id = Benutzer.Benutzer.GenerateNewBenutzerID();
+            string passwortHash = Hasher.hashPassword(id, passwort);
 
-            //TODO: further checks if valid
-
-            Benutzer.Benutzer benutzer = new Benutzer.Benutzer(Benutzer.Benutzer.GenerateNewBenutzerID(), vorname, nachname, nickname, email, geburtsdatum, erstelldatum, passwort);
+            Benutzer.Benutzer benutzer = new Benutzer.Benutzer(id, vorname, nachname, nickname, email, geburtsdatum, erstelldatum, passwortHash);
             
             Benutzer.Benutzer.BENUTZER.Add(benutzer);
             Program.BENUTZER = benutzer;
 
             DatabaseManager.Database.execute("INSERT INTO benutzer VALUES('"+benutzer.BenutzerID+"', '"+benutzer.Vorname+"', '"+benutzer.Nachname+"', '"+benutzer.Nickname+"', '"+benutzer.Email+"', '"+benutzer.Geburtsdatum.ToString()+"', '"+benutzer.Erstelldatum.ToString()+"', '"+benutzer.Passwort+"')");
+            DatabaseManager.Database.execute("INSERT INTO kunde VALUES('" + benutzer.BenutzerID + "', 0)");
 
             Program.STARTSEITEFORM.Visible = true;
             Visible = false;

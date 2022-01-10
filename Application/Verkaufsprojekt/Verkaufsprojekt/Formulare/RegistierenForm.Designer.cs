@@ -41,6 +41,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label1
             // 
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(12, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 28);
@@ -57,6 +58,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label2
             // 
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(357, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 28);
@@ -73,6 +75,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label3
             // 
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(357, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 28);
@@ -89,6 +92,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label4
             // 
+            this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(12, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 28);
@@ -105,6 +109,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label5
             // 
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(12, 237);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(191, 28);
@@ -121,6 +126,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label6
             // 
+            this.label6.ForeColor = System.Drawing.Color.Teal;
             this.label6.Location = new System.Drawing.Point(357, 239);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 28);
@@ -137,13 +143,15 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // btn_registieren
             // 
+            this.btn_registieren.BackColor = System.Drawing.Color.Aqua;
             this.btn_registieren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_registieren.ForeColor = System.Drawing.Color.Teal;
             this.btn_registieren.Location = new System.Drawing.Point(12, 343);
             this.btn_registieren.Name = "btn_registieren";
             this.btn_registieren.Size = new System.Drawing.Size(161, 44);
             this.btn_registieren.TabIndex = 17;
             this.btn_registieren.Text = "Registieren";
-            this.btn_registieren.UseVisualStyleBackColor = true;
+            this.btn_registieren.UseVisualStyleBackColor = false;
             this.btn_registieren.Click += new System.EventHandler(this.btn_registieren_Click);
             // 
             // RegistierenForm

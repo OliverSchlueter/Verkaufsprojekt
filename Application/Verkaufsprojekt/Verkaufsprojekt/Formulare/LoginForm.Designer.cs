@@ -42,6 +42,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label1
             // 
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(20, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 28);
@@ -50,6 +51,7 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // label2
             // 
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(20, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 28);
@@ -66,14 +68,16 @@ namespace Verkaufsprojekt.Formulare {
             // 
             // btn_login
             // 
+            this.btn_login.BackColor = System.Drawing.Color.Aqua;
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.ForeColor = System.Drawing.Color.Teal;
             this.btn_login.Location = new System.Drawing.Point(25, 292);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(138, 52);
             this.btn_login.TabIndex = 7;
             this.btn_login.Text = "Login";
-            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // cb_benutzer
@@ -89,6 +93,7 @@ namespace Verkaufsprojekt.Formulare {
             this.cb_benutzer.Size = new System.Drawing.Size(166, 38);
             this.cb_benutzer.TabIndex = 8;
             this.cb_benutzer.Text = "Kunde";
+            this.cb_benutzer.Visible = false;
             // 
             // LoginForm
             // 

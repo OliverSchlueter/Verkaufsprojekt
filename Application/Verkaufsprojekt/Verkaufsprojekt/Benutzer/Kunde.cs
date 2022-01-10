@@ -152,11 +152,13 @@ namespace Verkaufsprojekt.Benutzer {
 
                 List<Produkt> boughtProducts = new List<Produkt>();
                 List<object[]> boughtProductsData = DatabaseManager.Database.GetData("SELECT produktID FROM kunde_kauft_produkt WHERE benutzerID='" + b.BenutzerID + "'");
-                foreach (object[] row2 in boughtProductsData) {
-                    boughtProducts.Add(Produkt.GetProduktFromID((string)row2[0]));
+                if (boughtProducts.Count > 0) {
+                    foreach (object[] row2 in boughtProductsData) {
+                        boughtProducts.Add(Produkt.GetProduktFromID((string)row2[0]));
+                    }
                 }
 
-                    Kunde kunde = new Kunde(b, (float)((double)row[1]), boughtProducts, new List<Produkt>(), new List<Produkt>());
+                Kunde kunde = new Kunde(b, (float)((double)row[1]), boughtProducts, new List<Produkt>(), new List<Produkt>());
 
                 KUNDEN.Add(kunde);
             }

@@ -57,6 +57,7 @@ namespace Verkaufsprojekt.Formulare {
             // lbl_neueProdukteHeadline
             // 
             this.lbl_neueProdukteHeadline.Font = new System.Drawing.Font("Malgun Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_neueProdukteHeadline.ForeColor = System.Drawing.Color.Teal;
             this.lbl_neueProdukteHeadline.Location = new System.Drawing.Point(3, -1);
             this.lbl_neueProdukteHeadline.Name = "lbl_neueProdukteHeadline";
             this.lbl_neueProdukteHeadline.Size = new System.Drawing.Size(381, 56);
@@ -87,6 +88,7 @@ namespace Verkaufsprojekt.Formulare {
             // lbl_meistGekauftHeadline
             // 
             this.lbl_meistGekauftHeadline.Font = new System.Drawing.Font("Malgun Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_meistGekauftHeadline.ForeColor = System.Drawing.Color.Teal;
             this.lbl_meistGekauftHeadline.Location = new System.Drawing.Point(3, -1);
             this.lbl_meistGekauftHeadline.Name = "lbl_meistGekauftHeadline";
             this.lbl_meistGekauftHeadline.Size = new System.Drawing.Size(381, 56);

@@ -1,0 +1,16 @@
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\bin\Release\Verkaufsprojekt.exe.config
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\bin\Release\Verkaufsprojekt.exe
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\bin\Release\Verkaufsprojekt.pdb
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.csprojAssemblyReference.cache
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.BaseForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.EinstellungForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.GekaufteProdukteForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.LoginForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.ProdukteForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.RegistierenForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Formulare.StartseiteForm.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.Properties.Resources.resources
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.csproj.GenerateResource.cache
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.csproj.CoreCompileInputs.cache
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.exe
+D:\Schule\Mittelstufe\SWR\Verkaufsprojekt\Application\Verkaufsprojekt\Verkaufsprojekt\obj\Release\Verkaufsprojekt.pdb

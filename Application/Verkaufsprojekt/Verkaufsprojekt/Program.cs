@@ -9,7 +9,7 @@ using Verkaufsprojekt.Benutzer;
 namespace Verkaufsprojekt {
     static class Program {
 
-        public static string VERSION { get { return "1.0.0 RELEASE"; } }
+        public static string VERSION { get { return "1.0.1 RELEASE"; } }
 
         public static BaseForm BASEFORM = null;
         public static StartseiteForm STARTSEITEFORM = null;
@@ -20,7 +20,7 @@ namespace Verkaufsprojekt {
         static void Main() {
 
             Console.WriteLine("Starting Verkaufsprojekt v" + VERSION);
-            Console.WriteLine(Hasher.hashPassword("O103", "oliver123"));
+            
             DatabaseManager.Database = new DatabaseManager("Provider=Microsoft.ACE.OLEDB.12.0;" + "Data Source = Database.accdb");
 
             Benutzer.Benutzer.LoadFromDB();

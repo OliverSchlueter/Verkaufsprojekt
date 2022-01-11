@@ -139,12 +139,13 @@ VerifizierterKauf: boolean<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:Labe
     <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="197.27199999999996" width="123.74400000000011" x="264.83200000000033" y="414.03200000000015"/>
+          <y:Geometry height="213.27199999999996" width="123.74400000000011" x="264.83200000000033" y="414.03200000000015"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.037109375" x="3.853445312500071" xml:space="preserve" y="4.0">&lt;&lt;enum&gt;&gt;
 Programmiersprache</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="151.01171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="60.021484375" x="2.0" xml:space="preserve" y="45.40234375">Java
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="165.712890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="60.021484375" x="2.0" xml:space="preserve" y="45.40234375">Java
+Kotlin
 C
 C#
 C++

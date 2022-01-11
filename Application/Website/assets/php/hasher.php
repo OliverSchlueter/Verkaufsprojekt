@@ -105,4 +105,15 @@ function hashPassword($id, $password) {
     return $version.$hash;
 }
 
+
+//TODO: check in every single text input to prevent SQL-INJECTION
+function containsBadCharacter($s){
+
+    if(str_contains($s, "'") || str_contains($s, "\"") || str_contains($s, "{") || str_contains($s, "}") || str_contains($s, "+") || str_contains($s, "=") || str_contains($s, ".")){
+        return true;
+    }
+
+    return false;
+}
+
 ?>

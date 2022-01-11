@@ -20,7 +20,7 @@ public & string & BenutzerID & Eindeutige ID, immer 5 Zeichen lang\\
 \hline
 public & string & Vorname & Vorname des Benutzers\\
 \hline
-public & string & Vorname & Nachname des Benutzers\\
+public & string & Nachname & Nachname des Benutzers\\
 \hline
 public & string & Nickname & Nickname des Benutzers\\
 \hline
@@ -232,7 +232,29 @@ private static & void & example() & Beispiel, nicht benutzen\\
 \end{tabular}
 
 
+\newpage
 
+\section{Hasher.cs}
+Dies ist eine Hilfsklasse, welche die Benutzer sämtlicher Hashfunktionen vereinfacht\\
+\\
+
+Methoden/Funktionen:\\
+
+\begin{tabular}[h]{l|l|l|p{5cm}}
+Modifizierer & Typ & Name & Beschreibung\\
+\hline
+public static & string & sha512(string message) & Berechnet den SHA-512 Hashwert aus der Nachricht\\
+\hline
+public static & string & sha256(string message) & Berechnet den SHA-256 Hashwert aus der Nachricht\\
+\hline
+public static & string & md5(string message) & Berechnet den MD5 Hashwert aus der Nachricht\\
+\hline
+public static & string & ripemd160(string message) & Berechnet den RIPEMD-160 Hashwert aus der Nachricht\\
+\hline
+public static & string & hashPassword(string id, string password) & Berechnet den Passwort-Hashwert aus der ID und den Passwort\\
+\hline
+public static & string & ByteArrayToString(byte[] ba) & Wandelt bytes in einen String um (hex)\\
+\end{tabular}
 
 
 
